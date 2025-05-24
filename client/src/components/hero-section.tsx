@@ -6,22 +6,24 @@ import { Sparkles, Users, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { useAnalytics } from "@/hooks/use-analytics";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { TemplateSelector } from "@/components/template-selector";
 
 interface HeroSectionProps {
-  onGenerate: (idea: string) => Promise<void>;
+  onGenerate: (idea: string, templateType?: string) => Promise<void>;
   isLoading: boolean;
   error: string | null;
 }
 
 export function HeroSection({ onGenerate, isLoading, error }: HeroSectionProps) {
   const [idea, setIdea] = useState("");
+  const [selectedTemplate, setSelectedTemplate] = useState("general");
   const { pageViews } = useAnalytics();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!idea.trim()) return;
     
-    await onGenerate(idea);
+    await onGenerate(idea, selectedTemplate);
   };
 
   return (
@@ -66,6 +68,11 @@ export function HeroSection({ onGenerate, isLoading, error }: HeroSectionProps) 
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <form onSubmit={handleSubmit} className="space-y-6">
+            <TemplateSelector 
+              selectedTemplate={selectedTemplate}
+              onTemplateSelect={setSelectedTemplate}
+            />
+            
             <div>
               <Label htmlFor="startup-idea" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3 block">
                 Describe your startup idea
