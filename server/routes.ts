@@ -4,12 +4,12 @@ import { storage } from "./storage";
 import { generateRequestSchema, generatedContentSchema } from "@shared/schema";
 import OpenAI from "openai";
 
-const openai = new OpenAI({ 
-  apiKey: process.env.OPENAI_API_KEY || process.env.OPENAI_KEY || process.env.API_KEY 
+const openai = new OpenAI({
+  apiKey:
+    process.env.OPENAI_API_KEY || process.env.OPENAI_KEY || process.env.API_KEY,
 });
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  
   app.post("/api/generate", async (req, res) => {
     try {
       const { idea } = generateRequestSchema.parse(req.body);
@@ -32,7 +32,7 @@ Your tone should match the startup idea. Make the copy persuasive and conversion
         model: "gpt-4o",
         messages: [
           { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt }
+          { role: "user", content: userPrompt },
         ],
         response_format: { type: "json_object" },
         temperature: 0.8,
@@ -45,7 +45,7 @@ Your tone should match the startup idea. Make the copy persuasive and conversion
       }
 
       const generatedContent = JSON.parse(generatedText);
-      
+
       // Validate the generated content matches our schema
       const validatedContent = generatedContentSchema.parse(generatedContent);
 
@@ -58,28 +58,33 @@ Your tone should match the startup idea. Make the copy persuasive and conversion
       res.json(validatedContent);
     } catch (error) {
       console.error("Generation error:", error);
-      
+
       if (error instanceof Error) {
         if (error.message.includes("API key")) {
-          res.status(401).json({ 
-            message: "OpenAI API key not configured. Please set the OPENAI_API_KEY environment variable." 
+          res.status(401).json({
+            message:
+              "OpenAI API key not configured. Please set the OPENAI_API_KEY environment variable.",
           });
-        } else if (error.message.includes("quota") || error.message.includes("billing")) {
-          res.status(402).json({ 
-            message: "OpenAI API quota exceeded. Please check your billing settings." 
+        } else if (
+          error.message.includes("quota") ||
+          error.message.includes("billing")
+        ) {
+          res.status(402).json({
+            message:
+              "OpenAI API quota exceeded. Please check your billing settings.",
           });
         } else if (error.message.includes("rate limit")) {
-          res.status(429).json({ 
-            message: "Rate limit exceeded. Please try again in a moment." 
+          res.status(429).json({
+            message: "Rate limit exceeded. Please try again in a moment.",
           });
         } else {
-          res.status(500).json({ 
-            message: "Failed to generate content. Please try again." 
+          res.status(500).json({
+            message: "Failed to generate content. Please try again.",
           });
         }
       } else {
-        res.status(500).json({ 
-          message: "An unexpected error occurred. Please try again." 
+        res.status(500).json({
+          message: "An unexpected error occurred. Please try again.",
         });
       }
     }
@@ -88,9 +93,9 @@ Your tone should match the startup idea. Make the copy persuasive and conversion
   app.get("/api/analytics", async (req, res) => {
     try {
       const generations = await storage.getBrandGenerations();
-      res.json({ 
+      res.json({
         totalGenerations: generations.length,
-        todayGenerations: generations.length // Simplified for demo
+        todayGenerations: generations.length, // Simplified for demo
       });
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch analytics" });
