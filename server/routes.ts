@@ -5,7 +5,7 @@ import { generateRequestSchema, generatedContentSchema } from "@shared/schema";
 
 // DeepSeek API configuration
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
-const DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1";
+const DEEPSEEK_BASE_URL = "https://api.deepseek.com";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/generate", async (req, res) => {
@@ -41,7 +41,11 @@ ${templateModifier} Make the copy persuasive and conversion-focused.`;
       const userPrompt = `Create landing page copy for this startup idea: ${idea}`;
 
       // Using DeepSeek API for more reliable content generation
-      const response = await fetch(`${DEEPSEEK_BASE_URL}/chat/completions`, {
+      console.log('Making request to DeepSeek API...');
+      console.log('API Key exists:', !!DEEPSEEK_API_KEY);
+      console.log('API URL:', `${DEEPSEEK_BASE_URL}/v1/chat/completions`);
+      
+      const response = await fetch(`${DEEPSEEK_BASE_URL}/v1/chat/completions`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,8 +63,12 @@ ${templateModifier} Make the copy persuasive and conversion-focused.`;
         }),
       });
 
+      console.log('Response status:', response.status);
+      
       if (!response.ok) {
-        throw new Error(`DeepSeek API error: ${response.status} ${response.statusText}`);
+        const errorText = await response.text();
+        console.log('Error response:', errorText);
+        throw new Error(`DeepSeek API error: ${response.status} ${response.statusText} - ${errorText}`);
       }
 
       const data = await response.json();
