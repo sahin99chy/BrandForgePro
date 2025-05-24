@@ -3,8 +3,8 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { generateRequestSchema, generatedContentSchema } from "@shared/schema";
 
-// OpenAI API configuration
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+// Google Gemini API configuration
+const GEMINI_API_KEY = "AIzaSyBSUjP1PK7uSDT-O-LW6OwRmCOkEmXqvyI";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/generate", async (req, res) => {
