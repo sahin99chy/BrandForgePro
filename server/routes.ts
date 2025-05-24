@@ -89,18 +89,13 @@ ${templateModifier} Make the copy persuasive and conversion-focused.`;
       console.error("Generation error:", error);
 
       if (error instanceof Error) {
-        if (error.message.includes("API key")) {
+        if (error.message.includes("API key") || error.message.includes("401")) {
           res.status(401).json({
-            message:
-              "OpenAI API key not configured. Please set the OPENAI_API_KEY environment variable.",
+            message: "DeepSeek API key not configured. Please check your API key.",
           });
-        } else if (
-          error.message.includes("quota") ||
-          error.message.includes("billing")
-        ) {
+        } else if (error.message.includes("quota") || error.message.includes("billing") || error.message.includes("429")) {
           res.status(402).json({
-            message:
-              "OpenAI API quota exceeded. Please check your billing settings.",
+            message: "API quota exceeded. Please check your billing settings.",
           });
         } else if (error.message.includes("rate limit")) {
           res.status(429).json({
