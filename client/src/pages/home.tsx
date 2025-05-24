@@ -13,7 +13,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleGenerate = async (idea: string) => {
+  const handleGenerate = async (idea: string, templateType: string = "general") => {
     setIsLoading(true);
     setError(null);
     
@@ -21,7 +21,7 @@ export default function Home() {
       const response = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ idea }),
+        body: JSON.stringify({ idea, templateType }),
       });
 
       if (!response.ok) {

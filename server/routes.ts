@@ -10,7 +10,22 @@ const DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1";
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/generate", async (req, res) => {
     try {
-      const { idea } = generateRequestSchema.parse(req.body);
+      const { idea, templateType } = generateRequestSchema.parse(req.body);
+
+      // Get template-specific prompt modifiers
+      const templatePrompts = {
+        saas: "Focus on scalability, efficiency, and user productivity. Use tech-savvy language and emphasize ROI.",
+        ecommerce: "Highlight product quality, customer satisfaction, and shopping convenience. Use action-oriented language.",
+        agency: "Emphasize expertise, results, and professional partnerships. Use confident, authority-building language.",
+        app: "Focus on user experience, convenience, and mobile-first features. Use modern, trendy language.",
+        health: "Prioritize trust, safety, and wellness benefits. Use caring, professional language.",
+        education: "Emphasize learning outcomes, skill development, and knowledge growth. Use encouraging, supportive language.",
+        food: "Highlight taste, quality, and dining experience. Use appetizing, sensory language.",
+        tech: "Focus on innovation, cutting-edge technology, and future solutions. Use forward-thinking language.",
+        general: "Use versatile, engaging language that works for any business type."
+      };
+
+      const templateModifier = templatePrompts[templateType as keyof typeof templatePrompts] || templatePrompts.general;
 
       const systemPrompt = `You are an expert landing page copywriter. Based on a startup idea, return JSON with:
 - headline: A compelling, attention-grabbing headline (startup-style)
@@ -21,7 +36,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 - emojiStyle: A string of 3 relevant emojis
 - brandTone: A brief description of the suggested brand tone (e.g., "Professional & Trustworthy", "Fun & Bold", etc.)
 
-Your tone should match the startup idea. Make the copy persuasive and conversion-focused.`;
+${templateModifier} Make the copy persuasive and conversion-focused.`;
 
       const userPrompt = `Create landing page copy for this startup idea: ${idea}`;
 
@@ -64,6 +79,9 @@ Your tone should match the startup idea. Make the copy persuasive and conversion
       await storage.createBrandGeneration({
         idea,
         generated_content: validatedContent,
+        template_type: templateType,
+        created_at: new Date().toISOString(),
+        user_id: null, // For now, no user authentication
       });
 
       res.json(validatedContent);
