@@ -12,6 +12,17 @@ export const brandGenerations = pgTable("brand_generations", {
   id: serial("id").primaryKey(),
   idea: text("idea").notNull(),
   generated_content: jsonb("generated_content").notNull(),
+  template_type: text("template_type").default("general"),
+  created_at: text("created_at").notNull(),
+  user_id: integer("user_id"),
+});
+
+export const templates = pgTable("templates", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  type: text("type").notNull(),
+  description: text("description").notNull(),
+  prompt_modifier: text("prompt_modifier").notNull(),
 });
 
 export const insertUserSchema = createInsertSchema(users).pick({
@@ -26,6 +37,15 @@ export const insertBrandGenerationSchema = createInsertSchema(brandGenerations).
 
 export const generateRequestSchema = z.object({
   idea: z.string().min(10, "Please provide at least 10 characters describing your startup idea"),
+  templateType: z.string().optional().default("general"),
+});
+
+export const templateSchema = z.object({
+  id: z.number(),
+  name: z.string(),
+  type: z.string(),
+  description: z.string(),
+  prompt_modifier: z.string(),
 });
 
 export const generatedContentSchema = z.object({

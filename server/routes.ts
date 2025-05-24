@@ -2,12 +2,10 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { generateRequestSchema, generatedContentSchema } from "@shared/schema";
-import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey:
-    process.env.OPENAI_API_KEY || process.env.OPENAI_KEY || process.env.API_KEY,
-});
+// DeepSeek API configuration
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
+const DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/generate", async (req, res) => {
@@ -27,21 +25,34 @@ Your tone should match the startup idea. Make the copy persuasive and conversion
 
       const userPrompt = `Create landing page copy for this startup idea: ${idea}`;
 
-      // the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
-      const response = await openai.chat.completions.create({
-        model: "gpt-4o",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt },
-        ],
-        response_format: { type: "json_object" },
-        temperature: 0.8,
-        max_tokens: 1000,
+      // Using DeepSeek API for more reliable content generation
+      const response = await fetch(`${DEEPSEEK_BASE_URL}/chat/completions`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${DEEPSEEK_API_KEY}`,
+        },
+        body: JSON.stringify({
+          model: "deepseek-chat",
+          messages: [
+            { role: "system", content: systemPrompt },
+            { role: "user", content: userPrompt }
+          ],
+          response_format: { type: "json_object" },
+          temperature: 0.8,
+          max_tokens: 1000,
+        }),
       });
 
-      const generatedText = response.choices[0].message.content;
+      if (!response.ok) {
+        throw new Error(`DeepSeek API error: ${response.status} ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      const generatedText = data.choices[0].message.content;
+      
       if (!generatedText) {
-        throw new Error("No content generated from OpenAI");
+        throw new Error("No content generated from DeepSeek");
       }
 
       const generatedContent = JSON.parse(generatedText);
