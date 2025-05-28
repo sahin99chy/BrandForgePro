@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>BrandForge - AI-Powered Landing Page Generator</title>
+    <meta name="description" content="Generate complete landing page copy for your startup idea in seconds with AI-powered BrandForge. Transform ideas into compelling copy instantly." />
+    
+    <!-- GitHub Pages SPA routing -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
+    <!-- Redirect to the actual app -->
+    <script>
+      window.location.href = '/BrandForgePro/';
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+        <div style="text-align: center; padding: 2rem;">
+          <h1>BrandForge</h1>
+          <p>Loading the application...</p>
+          <p>If you're not redirected automatically, please <a href="/BrandForgePro/">click here</a>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -47,6 +47,19 @@ try {
   console.error('Error copying 404.html:', error);
 }
 
+// Copy custom index-gh-pages.html to dist/index.html
+try {
+  if (fs.existsSync(path.resolve(__dirname, 'index-gh-pages.html'))) {
+    fs.copyFileSync(
+      path.resolve(__dirname, 'index-gh-pages.html'),
+      path.resolve(__dirname, 'dist/index.html')
+    );
+    console.log(`${colors.green}✓ Copied custom index.html for GitHub Pages${colors.reset}`);
+  }
+} catch (error) {
+  console.error('Error copying index-gh-pages.html:', error);
+}
+
 // Copy CNAME to dist if it exists
 try {
   if (fs.existsSync(path.resolve(__dirname, 'public/CNAME'))) {
