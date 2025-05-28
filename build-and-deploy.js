@@ -21,6 +21,13 @@ console.log(`${colors.bright}${colors.cyan}=== BrandForge GitHub Pages Deploymen
 // Step 1: Build the React app
 console.log(`${colors.yellow}Building React application...${colors.reset}`);
 try {
+  // Create a clean build
+  if (fs.existsSync('dist')) {
+    console.log(`${colors.yellow}Cleaning existing dist directory...${colors.reset}`);
+    fs.rmSync('dist', { recursive: true, force: true });
+  }
+  
+  // Run the build command
   execSync('npm run build:client', { stdio: 'inherit' });
   console.log(`${colors.green}✓ React build completed successfully${colors.reset}\n`);
 } catch (error) {
@@ -58,6 +65,19 @@ try {
   }
 } catch (error) {
   console.error('Error copying index-gh-pages.html:', error);
+}
+
+// Copy fallback.html to dist
+try {
+  if (fs.existsSync(path.resolve(__dirname, 'public/fallback.html'))) {
+    fs.copyFileSync(
+      path.resolve(__dirname, 'public/fallback.html'),
+      path.resolve(__dirname, 'dist/fallback.html')
+    );
+    console.log(`${colors.green}✓ Copied fallback.html${colors.reset}`);
+  }
+} catch (error) {
+  console.error('Error copying fallback.html:', error);
 }
 
 // Copy CNAME to dist if it exists

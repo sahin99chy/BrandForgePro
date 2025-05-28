@@ -15,9 +15,16 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    sourcemap: false,
+    minify: true,
+    // Ensure assets are properly referenced with the base path
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        // Ensure proper asset paths for GitHub Pages
+        assetFileNames: 'assets/[name].[hash].[ext]',
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js',
       },
     },
   },

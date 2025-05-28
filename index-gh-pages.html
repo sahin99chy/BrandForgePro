@@ -6,23 +6,13 @@
     <title>BrandForge - AI-Powered Landing Page Generator</title>
     <meta name="description" content="Generate complete landing page copy for your startup idea in seconds with AI-powered BrandForge. Transform ideas into compelling copy instantly." />
     
-    <!-- GitHub Pages SPA routing -->
-    <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-    
-    <!-- Redirect to the actual app -->
+    <!-- GitHub Pages SPA redirect for root domain -->
     <script>
-      window.location.href = '/BrandForgePro/';
+      // Redirect to the BrandForgePro subdirectory without creating an infinite loop
+      var currentPath = window.location.pathname;
+      if (currentPath === '/' || currentPath === '/index.html') {
+        window.location.replace('/BrandForgePro/');
+      }
     </script>
   </head>
   <body>
