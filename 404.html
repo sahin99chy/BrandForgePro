@@ -2,35 +2,80 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BrandForge Pro</title>
+    <title>BrandForge Pro - Loading...</title>
     <script>
-      // Single Page Apps for GitHub Pages
+      // Single Page Apps for GitHub Pages - Enhanced routing
       (function() {
-        // Get the redirect from session storage
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        var basePath = '/BrandForgePro';
+        const basePath = '/BrandForgePro';
+        const currentPath = window.location.pathname;
         
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-        } else {
-          // Handle direct access to a route
-          var path = window.location.pathname + window.location.search + window.location.hash;
-          
-          if (!path.startsWith(basePath + '/')) {
-            var newPath = basePath + '/' + path.replace(/^\/?/, '');
-            window.location.replace(newPath);
-            return;
-          }
+        // If we're already at the base path, let the app handle it
+        if (currentPath === basePath + '/' || currentPath === basePath) {
+          window.location.replace(basePath + '/');
+          return;
         }
         
-        // If we get here, redirect to the base path
-        window.location.replace(basePath + '/');
+        // If we're not at the base path, redirect to the app with the current path
+        const newPath = basePath + currentPath.replace(new RegExp('^' + basePath), '');
+        const redirectUrl = window.location.origin + newPath;
+        
+        // Store the intended path in session storage
+        sessionStorage.setItem('redirectAfterReload', window.location.href);
+        
+        // Redirect to the app with the correct path
+        window.location.replace(redirectUrl);
+        
+        // If we're still here after a short delay, redirect to the base path
+        setTimeout(function() {
+          window.location.replace(window.location.origin + basePath + '/');
+        }, 1000);
       })();
     </script>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #f8fafc;
+        color: #1e293b;
+      }
+      .loader {
+        text-align: center;
+        padding: 2rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .spinner {
+        border: 4px solid #e2e8f0;
+        border-radius: 50%;
+        border-top: 4px solid #3b82f6;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      a {
+        color: #3b82f6;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <p>Redirecting to BrandForge Pro...</p>
-    <p>If you are not redirected, <a href="/BrandForgePro/">click here</a>.</p>
+    <div class="loader">
+      <div class="spinner"></div>
+      <h2>Loading BrandForge Pro...</h2>
+      <p>If you're not redirected, <a href="/BrandForgePro/">click here</a> to continue.</p>
+    </div>
   </body>
 </html>
