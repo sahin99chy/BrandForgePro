@@ -1,0 +1,21 @@
+{
+  "id": "premium_template_19",
+  "name": "E-commerce Pro",
+  "category": "E-commerce",
+  "premium": true,
+  "description": "A complete e-commerce template with product showcase and cart.",
+  "tags": [
+    "ecommerce",
+    "shop",
+    "store",
+    "premium"
+  ],
+  "features": [
+    "E-commerce Shop",
+    "Product Showcase",
+    "Shopping Cart"
+  ],
+  "previewImage": "/templates/premium/premium_template_19/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.187Z",
+  "updatedAt": "2025-05-28T01:34:26.187Z"
+}

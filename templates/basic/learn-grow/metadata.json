@@ -1,0 +1,15 @@
+{
+  "id": "basic_06",
+  "name": "Learn & Grow",
+  "type": "basic",
+  "layout": "education-focused",
+  "styleVibe": "Friendly, Engaging, Accessible",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["education"],
+  "sections": ["Hero", "Courses", "Instructors", "Curriculum", "Testimonials", "Footer"],
+  "features": ["course-preview", "instructor-profiles", "curriculum-overview"],
+  "previewUrl": "/templates/basic/learn-grow/index.html",
+  "downloadUrl": "/downloads/learn-grow.zip"
+}

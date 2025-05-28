@@ -1,0 +1,15 @@
+{
+  "id": "premium_11",
+  "name": "3D Elements",
+  "type": "premium",
+  "layout": "3d-showcase",
+  "styleVibe": "Futuristic, Immersive, Interactive",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["tech", "app", "general"],
+  "sections": ["Hero", "Features", "3D Showcase", "Testimonials", "Pricing", "CTA", "Footer"],
+  "features": ["3d-elements", "interactive-models", "animated-transitions"],
+  "previewUrl": "/templates/premium/3d-elements/index.html",
+  "downloadUrl": "/downloads/3d-elements.zip"
+}

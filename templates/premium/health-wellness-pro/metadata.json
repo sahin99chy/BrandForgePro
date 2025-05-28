@@ -1,0 +1,15 @@
+{
+  "id": "premium_05",
+  "name": "Health & Wellness Pro",
+  "type": "premium",
+  "layout": "wellness-premium",
+  "styleVibe": "Calm, Nurturing, Holistic",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["health"],
+  "sections": ["Hero", "Services", "Testimonials", "Experts", "Blog", "Booking", "Footer"],
+  "features": ["appointment-booking", "service-showcase", "testimonial-video"],
+  "previewUrl": "/templates/premium/health-wellness-pro/index.html",
+  "downloadUrl": "/downloads/health-wellness-pro.zip"
+}

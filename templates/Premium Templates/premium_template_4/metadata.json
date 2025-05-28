@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_4",
+  "name": "Corporate X",
+  "category": "Corporate",
+  "premium": true,
+  "description": "A corporate business template with a professional and clean design.",
+  "tags": [
+    "corporate",
+    "business",
+    "professional"
+  ],
+  "features": [
+    "Corporate Design",
+    "Professional Layout",
+    "Testimonials"
+  ],
+  "previewImage": "/templates/premium/premium_template_4/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.197Z",
+  "updatedAt": "2025-05-28T01:34:26.197Z"
+}

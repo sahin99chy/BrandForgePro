@@ -1,0 +1,15 @@
+{
+  "id": "premium_17",
+  "name": "Interactive Product",
+  "type": "premium",
+  "layout": "interactive-showcase",
+  "styleVibe": "Engaging, Modern, Interactive",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["ecommerce", "tech"],
+  "sections": ["Hero", "Product Showcase", "Features", "Interactive Demo", "Testimonials", "Pricing", "Footer"],
+  "features": ["interactive-product-view", "feature-highlight", "customization-preview"],
+  "previewUrl": "/templates/premium/interactive-product/index.html",
+  "downloadUrl": "/downloads/interactive-product.zip"
+}

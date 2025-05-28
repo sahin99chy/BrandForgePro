@@ -1,0 +1,21 @@
+{
+  "id": "premium_template_17",
+  "name": "Fitness Pro",
+  "category": "Fitness",
+  "premium": true,
+  "description": "A fitness template with class schedules and trainer profiles.",
+  "tags": [
+    "fitness",
+    "health",
+    "coach",
+    "premium"
+  ],
+  "features": [
+    "Fitness Focused",
+    "Class Schedule",
+    "Trainer Profiles"
+  ],
+  "previewImage": "/templates/premium/premium_template_17/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.184Z",
+  "updatedAt": "2025-05-28T01:34:26.184Z"
+}

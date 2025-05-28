@@ -1,0 +1,15 @@
+{
+  "id": "premium_02",
+  "name": "Gradient Flow",
+  "type": "premium",
+  "layout": "gradient-split",
+  "styleVibe": "Vibrant, Modern, Dynamic",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["tech", "app", "general"],
+  "sections": ["Hero", "Features", "Showcase", "Testimonials", "Pricing", "CTA", "Footer"],
+  "features": ["gradient-backgrounds", "animated-transitions", "3d-elements"],
+  "previewUrl": "/templates/premium/gradient-flow/index.html",
+  "downloadUrl": "/downloads/gradient-flow.zip"
+}

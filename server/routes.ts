@@ -39,25 +39,25 @@ ${templateModifier} Make the copy persuasive and conversion-focused.`;
 
       const userPrompt = `Create landing page copy for this startup idea: ${idea}`;
 
-      // Using OpenAI API for content generation
-      console.log('Making request to OpenAI API...');
-      console.log('API Key exists:', !!OPENAI_API_KEY);
+      // Using Google Gemini API for content generation
+      console.log('Making request to Gemini API...');
+      console.log('API Key exists:', !!GEMINI_API_KEY);
       
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${OPENAI_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "gpt-4o", // the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
-          messages: [
-            { role: "system", content: systemPrompt },
-            { role: "user", content: userPrompt }
-          ],
-          response_format: { type: "json_object" },
-          temperature: 0.8,
-          max_tokens: 1000,
+          contents: [{
+            parts: [{
+              text: `${systemPrompt}\n\n${userPrompt}`
+            }]
+          }],
+          generationConfig: {
+            temperature: 0.8,
+            maxOutputTokens: 1000,
+          }
         }),
       });
 
@@ -67,35 +67,14 @@ ${templateModifier} Make the copy persuasive and conversion-focused.`;
         const errorText = await response.text();
         console.log('Error response:', errorText);
         
-        // Fallback to demo content when API is unavailable
-        console.log('API unavailable, using demo content...');
-        const demoContent = {
-          headline: `Revolutionary ${idea} - Transform Your Business Today`,
-          subheadline: `Experience the future of ${templateType === 'saas' ? 'software solutions' : 'business innovation'} with our cutting-edge platform designed specifically for your industry.`,
-          features: [
-            "Streamlined Operations & Efficiency",
-            "Real-time Analytics & Insights", 
-            "Scalable Growth Solutions",
-            "24/7 Expert Support"
-          ],
-          cta: "Start Your Free Trial Today",
-          benefits: [
-            "Save 40% on operational costs",
-            "Increase productivity by 60%",
-            "Deploy in under 24 hours",
-            "Enterprise-grade security"
-          ]
-        };
-        
-        const generatedContent = generatedContentSchema.parse(demoContent);
-        return res.json(generatedContent);
+        throw new Error(`Gemini API error: ${response.status} ${response.statusText} - ${errorText}`);
       }
 
       const data = await response.json();
-      const generatedText = data.choices[0].message.content;
+      const generatedText = data.candidates[0].content.parts[0].text;
       
       if (!generatedText) {
-        throw new Error("No content generated from DeepSeek");
+        throw new Error("No content generated from Gemini");
       }
 
       const generatedContent = JSON.parse(generatedText);

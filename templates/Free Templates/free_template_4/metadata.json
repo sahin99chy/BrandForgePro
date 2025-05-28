@@ -1,0 +1,20 @@
+{
+  "id": "free_template_4",
+  "name": "Minimal Blog",
+  "category": "Blog",
+  "premium": false,
+  "description": "A simple and clean blog template for writers and content creators.",
+  "tags": [
+    "blog",
+    "minimal",
+    "clean"
+  ],
+  "features": [
+    "Minimal Design",
+    "Blog Layout",
+    "Clean Typography"
+  ],
+  "previewImage": "/templates/free/free_template_4/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.152Z",
+  "updatedAt": "2025-05-28T01:34:26.152Z"
+}

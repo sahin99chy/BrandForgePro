@@ -1,0 +1,15 @@
+{
+  "id": "premium_10",
+  "name": "Split Screen Showcase",
+  "type": "premium",
+  "layout": "dual-content",
+  "styleVibe": "Modern, Balanced, Elegant",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["agency", "tech", "general"],
+  "sections": ["Hero", "Features", "Portfolio", "Testimonials", "Team", "Contact", "Footer"],
+  "features": ["split-screen-layout", "scroll-animations", "content-reveal"],
+  "previewUrl": "/templates/premium/split-screen/index.html",
+  "downloadUrl": "/downloads/split-screen.zip"
+}

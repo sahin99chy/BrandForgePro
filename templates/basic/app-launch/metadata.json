@@ -1,0 +1,15 @@
+{
+  "id": "basic_04",
+  "name": "App Launch",
+  "type": "basic",
+  "layout": "app-showcase",
+  "styleVibe": "Modern, Sleek, User-friendly",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["app", "tech"],
+  "sections": ["Hero", "Features", "Screenshots", "Download", "FAQ", "Footer"],
+  "features": ["app-screenshots", "download-buttons", "feature-cards"],
+  "previewUrl": "/templates/basic/app-launch/index.html",
+  "downloadUrl": "/downloads/app-launch.zip"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "premium_16",
+  "name": "Parallax Scrolling",
+  "type": "premium",
+  "layout": "parallax-story",
+  "styleVibe": "Immersive, Dynamic, Engaging",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["general", "agency", "tech"],
+  "sections": ["Hero", "Story", "Features", "Showcase", "Testimonials", "CTA", "Footer"],
+  "features": ["parallax-effects", "scroll-animations", "storytelling-layout"],
+  "previewUrl": "/templates/premium/parallax-scrolling/index.html",
+  "downloadUrl": "/downloads/parallax-scrolling.zip"
+}

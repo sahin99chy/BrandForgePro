@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_8",
+  "name": "Finance Pro",
+  "category": "Finance",
+  "premium": true,
+  "description": "A finance and business template with data visualization.",
+  "tags": [
+    "finance",
+    "business",
+    "corporate"
+  ],
+  "features": [
+    "Finance Focused",
+    "Data Visualization",
+    "Pricing"
+  ],
+  "previewImage": "/templates/premium/premium_template_8/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.204Z",
+  "updatedAt": "2025-05-28T01:34:26.204Z"
+}

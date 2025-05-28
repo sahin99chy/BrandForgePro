@@ -1,0 +1,21 @@
+{
+  "id": "premium_template_20",
+  "name": "Blog Pro",
+  "category": "Blog",
+  "premium": true,
+  "description": "A professional blog template with clean typography and layout.",
+  "tags": [
+    "blog",
+    "professional",
+    "minimal",
+    "premium"
+  ],
+  "features": [
+    "Professional Blog",
+    "Clean Layout",
+    "SEO Optimized"
+  ],
+  "previewImage": "/templates/premium/premium_template_20/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.192Z",
+  "updatedAt": "2025-05-28T01:34:26.192Z"
+}

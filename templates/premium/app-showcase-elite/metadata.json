@@ -1,0 +1,15 @@
+{
+  "id": "premium_12",
+  "name": "App Showcase Elite",
+  "type": "premium",
+  "layout": "app-premium",
+  "styleVibe": "Polished, Modern, User-centric",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["app"],
+  "sections": ["Hero", "Features", "Screenshots", "Testimonials", "Pricing", "FAQ", "Download", "Footer"],
+  "features": ["device-mockups", "feature-showcase", "app-screenshots"],
+  "previewUrl": "/templates/premium/app-showcase-elite/index.html",
+  "downloadUrl": "/downloads/app-showcase-elite.zip"
+}

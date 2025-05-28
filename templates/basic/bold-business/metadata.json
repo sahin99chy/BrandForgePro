@@ -1,0 +1,15 @@
+{
+  "id": "basic_02",
+  "name": "Bold Business",
+  "type": "basic",
+  "layout": "split-screen",
+  "styleVibe": "Bold, Professional, Confident",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["agency", "general", "education"],
+  "sections": ["Hero", "Services", "Pricing", "Team", "CTA", "Footer"],
+  "features": ["hero-section", "pricing-table", "team-section"],
+  "previewUrl": "/templates/basic/bold-business/index.html",
+  "downloadUrl": "/downloads/bold-business.zip"
+}

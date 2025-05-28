@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_3",
+  "name": "Agency Pro",
+  "category": "Agency",
+  "premium": true,
+  "description": "A premium agency template with portfolio showcase and team sections.",
+  "tags": [
+    "agency",
+    "creative",
+    "professional"
+  ],
+  "features": [
+    "Agency Layout",
+    "Portfolio Showcase",
+    "Team Section"
+  ],
+  "previewImage": "/templates/premium/premium_template_3/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.194Z",
+  "updatedAt": "2025-05-28T01:34:26.194Z"
+}

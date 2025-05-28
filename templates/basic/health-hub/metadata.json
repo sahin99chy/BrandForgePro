@@ -1,0 +1,15 @@
+{
+  "id": "basic_05",
+  "name": "Health Hub",
+  "type": "basic",
+  "layout": "wellness-focused",
+  "styleVibe": "Calm, Nurturing, Professional",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["health"],
+  "sections": ["Hero", "Services", "Testimonials", "Team", "Contact", "Footer"],
+  "features": ["testimonials", "service-cards", "contact-form"],
+  "previewUrl": "/templates/basic/health-hub/index.html",
+  "downloadUrl": "/downloads/health-hub.zip"
+}

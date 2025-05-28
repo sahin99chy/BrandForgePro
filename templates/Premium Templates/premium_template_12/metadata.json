@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_12",
+  "name": "Startup Kit",
+  "category": "Startup",
+  "premium": true,
+  "description": "A startup kit template with all the essential sections you need.",
+  "tags": [
+    "startup",
+    "tech",
+    "minimal"
+  ],
+  "features": [
+    "Startup Focused",
+    "Feature Highlights",
+    "Pricing"
+  ],
+  "previewImage": "/templates/premium/premium_template_12/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.172Z",
+  "updatedAt": "2025-05-28T01:34:26.172Z"
+}

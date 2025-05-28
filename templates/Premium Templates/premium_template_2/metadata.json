@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_2",
+  "name": "SaaS Launch",
+  "category": "SaaS",
+  "premium": true,
+  "description": "A professional SaaS landing page template with feature highlights.",
+  "tags": [
+    "saas",
+    "tech",
+    "app"
+  ],
+  "features": [
+    "SaaS Focused",
+    "Feature Showcase",
+    "Pricing Tables"
+  ],
+  "previewImage": "/templates/premium/premium_template_2/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.191Z",
+  "updatedAt": "2025-05-28T01:34:26.191Z"
+}

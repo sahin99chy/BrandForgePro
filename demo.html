@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandForgePro - Dynamic Templates Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .template-card {
+            transition: all 0.3s ease;
+        }
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .color-swatch {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-xl font-bold text-gray-900">BrandForgePro</h1>
+                <span class="ml-2 text-sm bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Dynamic Templates</span>
+            </div>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-gray-900">Home</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">Templates</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Dynamic Multi-Template Brand Generation</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Generate unique, visually distinct brand pages with a single click. Each template offers a different style, layout, and tone.</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Your Startup Idea</h2>
+            <div class="mb-6">
+                <label for="idea" class="block text-sm font-medium text-gray-700 mb-1">Describe your startup idea</label>
+                <textarea id="idea" rows="3" class="shadow-sm block w-full border border-gray-300 rounded-md p-3" placeholder="e.g., An AI-powered platform that helps small businesses automate their customer support using natural language processing."></textarea>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Business Category</label>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="relative">
+                        <input type="radio" id="saas" name="category" value="saas" class="sr-only peer" checked>
+                        <label for="saas" class="flex flex-col p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-blue-500 peer-checked:bg-blue-50">
+                            <span class="font-medium text-gray-900">SaaS / Software</span>
+                            <span class="text-sm text-gray-500">For cloud-based software and tools</span>
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input type="radio" id="ecommerce" name="category" value="ecommerce" class="sr-only peer">
+                        <label for="ecommerce" class="flex flex-col p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-blue-500 peer-checked:bg-blue-50">
+                            <span class="font-medium text-gray-900">E-commerce</span>
+                            <span class="text-sm text-gray-500">For online stores and retail</span>
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input type="radio" id="health" name="category" value="health" class="sr-only peer">
+                        <label for="health" class="flex flex-col p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-blue-500 peer-checked:bg-blue-50">
+                            <span class="font-medium text-gray-900">Health / Wellness</span>
+                            <span class="text-sm text-gray-500">For healthcare and wellness</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button id="generate-btn" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                    Generate Brand Page
+                </button>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Available Templates</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <!-- Template 1: Minimal Tech -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-32 bg-gray-900 flex items-center justify-center">
+                    <span class="text-3xl">⚙️📊🔧</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Minimal Tech</h3>
+                    <p class="text-sm text-gray-600 mb-3">Clean, modern design with a focus on technology and innovation</p>
+                    <div class="flex mb-3">
+                        <span class="color-swatch" style="background-color: #0F172A;"></span>
+                        <span class="color-swatch" style="background-color: #1E293B;"></span>
+                        <span class="color-swatch" style="background-color: #38BDF8;"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Professional</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Innovative</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Technical</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 2: Fun & Youthful -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-32 bg-pink-500 flex items-center justify-center">
+                    <span class="text-3xl">🎉🔥✨</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Fun & Youthful</h3>
+                    <p class="text-sm text-gray-600 mb-3">Playful, energetic design with vibrant colors and friendly tone</p>
+                    <div class="flex mb-3">
+                        <span class="color-swatch" style="background-color: #FF6B6B;"></span>
+                        <span class="color-swatch" style="background-color: #4ECDC4;"></span>
+                        <span class="color-swatch" style="background-color: #FFE66D;"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Playful</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Energetic</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Friendly</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 3: Premium Corporate -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-32 bg-gray-800 flex items-center justify-center">
+                    <span class="text-3xl">📈💼✅</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Premium Corporate</h3>
+                    <p class="text-sm text-gray-600 mb-3">Sophisticated, professional design with a focus on trust and authority</p>
+                    <div class="flex mb-3">
+                        <span class="color-swatch" style="background-color: #1C1C1C;"></span>
+                        <span class="color-swatch" style="background-color: #2D2D2D;"></span>
+                        <span class="color-swatch" style="background-color: #D4AF37;"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Professional</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Authoritative</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Sophisticated</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 4: Creative Bold -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-32 bg-purple-600 flex items-center justify-center">
+                    <span class="text-3xl">🎨🔥💫</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Creative & Bold</h3>
+                    <p class="text-sm text-gray-600 mb-3">Striking, artistic design with bold colors and innovative layouts</p>
+                    <div class="flex mb-3">
+                        <span class="color-swatch" style="background-color: #FF595E;"></span>
+                        <span class="color-swatch" style="background-color: #FFCA3A;"></span>
+                        <span class="color-swatch" style="background-color: #8AC926;"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Bold</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Artistic</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Creative</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 5: Eco-Friendly -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-32 bg-green-700 flex items-center justify-center">
+                    <span class="text-3xl">🌱🌿🍃</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Eco-Friendly</h3>
+                    <p class="text-sm text-gray-600 mb-3">Sustainable, natural design with earthy tones and organic elements</p>
+                    <div class="flex mb-3">
+                        <span class="color-swatch" style="background-color: #588157;"></span>
+                        <span class="color-swatch" style="background-color: #A3B18A;"></span>
+                        <span class="color-swatch" style="background-color: #DAD7CD;"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Natural</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Sustainable</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Organic</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 6: Modern Sleek -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-32 bg-gray-100 flex items-center justify-center">
+                    <span class="text-3xl">◽️◾️▪️</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Modern & Sleek</h3>
+                    <p class="text-sm text-gray-600 mb-3">Minimalist, contemporary design with clean lines and sophisticated aesthetics</p>
+                    <div class="flex mb-3">
+                        <span class="color-swatch" style="background-color: #F8F9FA;"></span>
+                        <span class="color-swatch" style="background-color: #E9ECEF;"></span>
+                        <span class="color-swatch" style="background-color: #212529;"></span>
+                    </div>
+                    <div class="text-xs text-gray-500">
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Minimal</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Refined</span>
+                        <span class="inline-block bg-gray-100 rounded px-2 py-1 mr-1 mb-1">Elegant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-blue-50 rounded-xl p-6">
+            <h2 class="text-xl font-bold text-blue-900 mb-4">How the Dynamic Template System Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <div class="text-blue-500 text-2xl mb-2">1</div>
+                    <h3 class="font-bold text-gray-900 mb-2">Smart Template Selection</h3>
+                    <p class="text-gray-600 text-sm">The system intelligently selects templates based on your business category and startup description keywords.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <div class="text-blue-500 text-2xl mb-2">2</div>
+                    <h3 class="font-bold text-gray-900 mb-2">Dynamic Content Generation</h3>
+                    <p class="text-gray-600 text-sm">Each template generates unique brand names, headlines, features, and visual styles tailored to your input.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm">
+                    <div class="text-blue-500 text-2xl mb-2">3</div>
+                    <h3 class="font-bold text-gray-900 mb-2">One-Click Regeneration</h3>
+                    <p class="text-gray-600 text-sm">Not satisfied? Click "More Options" to instantly generate a completely different brand page with a new template.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                BrandForgePro - Dynamic Multi-Template Brand Page Generation Demo
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('generate-btn').addEventListener('click', function() {
+            alert('In the actual application, this would generate a brand page using one of the 7 templates based on your input. You would then be able to click "More Options" to see alternative designs with different templates.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "id": "basic_03",
+  "name": "Ecommerce Essential",
+  "type": "basic",
+  "layout": "product-focused",
+  "styleVibe": "Clean, Organized, Trustworthy",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["ecommerce", "general"],
+  "sections": ["Hero", "Products", "Features", "Newsletter", "CTA", "Footer"],
+  "features": ["product-showcase", "features-list", "newsletter-signup"],
+  "previewUrl": "/templates/basic/ecommerce-essential/index.html",
+  "downloadUrl": "/downloads/ecommerce-essential.zip"
+}

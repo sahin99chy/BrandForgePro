@@ -1,0 +1,15 @@
+{
+  "id": "basic_08",
+  "name": "Tech Innovator",
+  "type": "basic",
+  "layout": "tech-focused",
+  "styleVibe": "Innovative, Cutting-edge, Professional",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["tech", "saas", "app"],
+  "sections": ["Hero", "Features", "Solutions", "Integrations", "CTA", "Footer"],
+  "features": ["tech-specs", "integration-icons", "solution-cards"],
+  "previewUrl": "/templates/basic/tech-innovator/index.html",
+  "downloadUrl": "/downloads/tech-innovator.zip"
+}

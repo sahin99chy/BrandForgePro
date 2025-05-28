@@ -1,0 +1,15 @@
+{
+  "id": "premium_08",
+  "name": "Startup Showcase",
+  "type": "premium",
+  "layout": "startup-focused",
+  "styleVibe": "Modern, Innovative, Energetic",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["tech", "app", "saas"],
+  "sections": ["Hero", "Features", "Metrics", "Team", "Investors", "Roadmap", "CTA", "Footer"],
+  "features": ["animated-metrics", "team-profiles", "roadmap-timeline"],
+  "previewUrl": "/templates/premium/startup-showcase/index.html",
+  "downloadUrl": "/downloads/startup-showcase.zip"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "free_template_2",
+  "name": "Creative Agency",
+  "category": "Agency",
+  "premium": false,
+  "description": "A creative agency template with a modern design and portfolio showcase.",
+  "tags": [
+    "agency",
+    "creative",
+    "modern"
+  ],
+  "features": [
+    "Creative Layout",
+    "Modern Design",
+    "Easy to Customize"
+  ],
+  "previewImage": "/templates/free/free_template_2/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.148Z",
+  "updatedAt": "2025-05-28T01:34:26.148Z"
+}

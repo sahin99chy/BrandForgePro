@@ -1,0 +1,20 @@
+{
+  "id": "free_template_7",
+  "name": "Fitness Coach",
+  "category": "Fitness",
+  "premium": false,
+  "description": "A fitness coach template with class schedules and training programs.",
+  "tags": [
+    "fitness",
+    "health",
+    "coach"
+  ],
+  "features": [
+    "Fitness Focused",
+    "Class Schedule",
+    "Responsive"
+  ],
+  "previewImage": "/templates/free/free_template_7/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.157Z",
+  "updatedAt": "2025-05-28T01:34:26.157Z"
+}

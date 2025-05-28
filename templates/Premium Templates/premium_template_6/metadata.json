@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_6",
+  "name": "App Showcase",
+  "category": "App",
+  "premium": true,
+  "description": "An app showcase template with feature highlights and screenshots.",
+  "tags": [
+    "app",
+    "mobile",
+    "showcase"
+  ],
+  "features": [
+    "App Showcase",
+    "Feature Highlights",
+    "App Screenshots"
+  ],
+  "previewImage": "/templates/premium/premium_template_6/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.200Z",
+  "updatedAt": "2025-05-28T01:34:26.200Z"
+}

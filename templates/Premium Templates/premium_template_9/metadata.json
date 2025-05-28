@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_9",
+  "name": "Health & Wellness",
+  "category": "Health",
+  "premium": true,
+  "description": "A health and wellness template with class schedules and trainer profiles.",
+  "tags": [
+    "health",
+    "wellness",
+    "fitness"
+  ],
+  "features": [
+    "Health Focused",
+    "Class Schedule",
+    "Trainer Profiles"
+  ],
+  "previewImage": "/templates/premium/premium_template_9/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.206Z",
+  "updatedAt": "2025-05-28T01:34:26.206Z"
+}

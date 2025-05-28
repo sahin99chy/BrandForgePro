@@ -1,0 +1,15 @@
+{
+  "id": "premium_07",
+  "name": "Illustrated Story",
+  "type": "premium",
+  "layout": "illustrated-journey",
+  "styleVibe": "Narrative, Creative, Engaging",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["education", "general", "agency"],
+  "sections": ["Hero", "Story", "Features", "Team", "Process", "CTA", "Footer"],
+  "features": ["custom-illustrations", "storytelling-layout", "animated-graphics"],
+  "previewUrl": "/templates/premium/illustrated-story/index.html",
+  "downloadUrl": "/downloads/illustrated-story.zip"
+}

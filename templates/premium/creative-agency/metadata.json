@@ -1,0 +1,15 @@
+{
+  "id": "premium_03",
+  "name": "Creative Agency",
+  "type": "premium",
+  "layout": "creative-portfolio",
+  "styleVibe": "Creative, Bold, Artistic",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["agency", "creative"],
+  "sections": ["Hero", "Portfolio", "Services", "Team", "Process", "Clients", "Contact", "Footer"],
+  "features": ["portfolio-gallery", "animated-counters", "team-showcase"],
+  "previewUrl": "/templates/premium/creative-agency/index.html",
+  "downloadUrl": "/downloads/creative-agency.zip"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "free_template_10",
+  "name": "Personal Blog",
+  "category": "Blog",
+  "premium": false,
+  "description": "A personal blog template with a clean and minimal design.",
+  "tags": [
+    "blog",
+    "personal",
+    "minimal"
+  ],
+  "features": [
+    "Blog Layout",
+    "Clean Design",
+    "Responsive"
+  ],
+  "previewImage": "/templates/free/free_template_10/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.146Z",
+  "updatedAt": "2025-05-28T01:34:26.146Z"
+}

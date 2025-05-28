@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Template Metadata Schema",
+  "description": "Schema for Brand Forge template metadata",
+  "type": "object",
+  "required": ["id", "name", "type", "layout", "responsive"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the template"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the template"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["basic", "premium"],
+      "description": "Template category"
+    },
+    "layout": {
+      "type": "string",
+      "description": "Layout style of the template"
+    },
+    "responsive": {
+      "type": "boolean",
+      "description": "Whether the template is responsive"
+    },
+    "graphics": {
+      "type": "boolean",
+      "description": "Whether the template includes graphics"
+    },
+    "premium": {
+      "type": "boolean",
+      "description": "Whether this is a premium template"
+    },
+    "industry": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Industries this template is suitable for"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Special features of this template"
+    },
+    "previewUrl": {
+      "type": "string",
+      "description": "URL to the template preview image"
+    },
+    "demoUrl": {
+      "type": "string",
+      "description": "URL to the live demo of the template"
+    }
+  }
+}

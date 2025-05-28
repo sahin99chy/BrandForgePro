@@ -1,0 +1,15 @@
+{
+  "id": "premium_04",
+  "name": "E-Commerce Deluxe",
+  "type": "premium",
+  "layout": "product-showcase",
+  "styleVibe": "Elegant, High-end, Sophisticated",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["ecommerce"],
+  "sections": ["Hero", "Featured Products", "Categories", "Testimonials", "Newsletter", "Instagram Feed", "Footer"],
+  "features": ["product-gallery", "shopping-cart", "wishlist-feature"],
+  "previewUrl": "/templates/premium/ecommerce-deluxe/index.html",
+  "downloadUrl": "/downloads/ecommerce-deluxe.zip"
+}

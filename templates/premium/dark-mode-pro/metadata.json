@@ -1,0 +1,15 @@
+{
+  "id": "premium_09",
+  "name": "Dark Mode Pro",
+  "type": "premium",
+  "layout": "dark-theme",
+  "styleVibe": "Sleek, Modern, High-contrast",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["tech", "saas", "app"],
+  "sections": ["Hero", "Features", "Showcase", "Testimonials", "Pricing", "FAQ", "Footer"],
+  "features": ["dark-light-toggle", "neon-accents", "animated-transitions"],
+  "previewUrl": "/templates/premium/dark-mode-pro/index.html",
+  "downloadUrl": "/downloads/dark-mode-pro.zip"
+}

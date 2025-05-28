@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_15",
+  "name": "Creative Resume",
+  "category": "Resume",
+  "premium": true,
+  "description": "A professional resume/CV template with a modern and clean layout.",
+  "tags": [
+    "resume",
+    "cv",
+    "professional"
+  ],
+  "features": [
+    "Professional CV",
+    "Elegant Design",
+    "Print Ready"
+  ],
+  "previewImage": "/templates/premium/premium_template_15/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.180Z",
+  "updatedAt": "2025-05-28T01:34:26.180Z"
+}

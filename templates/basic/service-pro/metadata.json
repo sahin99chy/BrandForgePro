@@ -1,0 +1,15 @@
+{
+  "id": "basic_09",
+  "name": "Service Pro",
+  "type": "basic",
+  "layout": "service-oriented",
+  "styleVibe": "Professional, Reliable, Trustworthy",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["agency", "general"],
+  "sections": ["Hero", "Services", "Process", "Testimonials", "Contact", "Footer"],
+  "features": ["service-cards", "process-steps", "testimonial-carousel"],
+  "previewUrl": "/templates/basic/service-pro/index.html",
+  "downloadUrl": "/downloads/service-pro.zip"
+}

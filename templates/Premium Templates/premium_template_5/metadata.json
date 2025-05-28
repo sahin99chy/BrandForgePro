@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_5",
+  "name": "Startup Vision",
+  "category": "Startup",
+  "premium": true,
+  "description": "A modern startup template with feature highlights and testimonials.",
+  "tags": [
+    "startup",
+    "tech",
+    "modern"
+  ],
+  "features": [
+    "Startup Focused",
+    "Feature Highlights",
+    "Call to Action"
+  ],
+  "previewImage": "/templates/premium/premium_template_5/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.199Z",
+  "updatedAt": "2025-05-28T01:34:26.199Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "premium_13",
+  "name": "Course Creator Pro",
+  "type": "premium",
+  "layout": "education-premium",
+  "styleVibe": "Professional, Organized, Educational",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["education"],
+  "sections": ["Hero", "Courses", "Instructors", "Features", "Testimonials", "Pricing", "FAQ", "Footer"],
+  "features": ["course-catalog", "learning-path", "instructor-profiles"],
+  "previewUrl": "/templates/premium/course-creator-pro/index.html",
+  "downloadUrl": "/downloads/course-creator-pro.zip"
+}

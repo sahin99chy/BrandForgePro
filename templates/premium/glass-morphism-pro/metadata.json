@@ -1,0 +1,15 @@
+{
+  "id": "premium_01",
+  "name": "Glass Morphism Pro",
+  "type": "premium",
+  "layout": "glassmorphic-hero",
+  "styleVibe": "Modern, Sleek, Futuristic",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["tech", "saas", "app"],
+  "sections": ["Hero", "Features", "Showcase", "Testimonials", "Pricing", "CTA", "Footer"],
+  "features": ["glassmorphism-ui", "animated-sections", "video-background"],
+  "previewUrl": "/templates/premium/glass-morphism-pro/index.html",
+  "downloadUrl": "/downloads/glass-morphism-pro.zip"
+}

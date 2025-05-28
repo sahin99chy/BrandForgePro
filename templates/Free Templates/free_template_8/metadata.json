@@ -1,0 +1,20 @@
+{
+  "id": "free_template_8",
+  "name": "Photography",
+  "category": "Photography",
+  "premium": false,
+  "description": "A photography portfolio template to showcase your best shots.",
+  "tags": [
+    "photography",
+    "portfolio",
+    "gallery"
+  ],
+  "features": [
+    "Gallery Layout",
+    "Portfolio Showcase",
+    "Responsive"
+  ],
+  "previewImage": "/templates/free/free_template_8/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.159Z",
+  "updatedAt": "2025-05-28T01:34:26.159Z"
+}

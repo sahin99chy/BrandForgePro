@@ -1,0 +1,15 @@
+{
+  "id": "premium_18",
+  "name": "Subscription Service",
+  "type": "premium",
+  "layout": "subscription-focused",
+  "styleVibe": "Professional, Clean, Value-oriented",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["saas", "general"],
+  "sections": ["Hero", "Features", "Pricing Tiers", "Comparison", "Testimonials", "FAQ", "CTA", "Footer"],
+  "features": ["pricing-tiers", "feature-comparison", "testimonial-carousel"],
+  "previewUrl": "/templates/premium/subscription-service/index.html",
+  "downloadUrl": "/downloads/subscription-service.zip"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_13",
+  "name": "Business Pro",
+  "category": "Business",
+  "premium": true,
+  "description": "A professional business template with team and services sections.",
+  "tags": [
+    "business",
+    "corporate",
+    "professional"
+  ],
+  "features": [
+    "Business Focused",
+    "Professional Layout",
+    "Team Section"
+  ],
+  "previewImage": "/templates/premium/premium_template_13/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.174Z",
+  "updatedAt": "2025-05-28T01:34:26.174Z"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "premium_14",
+  "name": "Agency Portfolio",
+  "type": "premium",
+  "layout": "portfolio-showcase",
+  "styleVibe": "Creative, Professional, Impressive",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["agency"],
+  "sections": ["Hero", "Portfolio", "Services", "Case Studies", "Team", "Clients", "Contact", "Footer"],
+  "features": ["case-studies", "team-profiles", "service-showcase"],
+  "previewUrl": "/templates/premium/agency-portfolio/index.html",
+  "downloadUrl": "/downloads/agency-portfolio.zip"
+}

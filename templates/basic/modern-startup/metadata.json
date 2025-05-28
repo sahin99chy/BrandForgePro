@@ -1,0 +1,15 @@
+{
+  "id": "basic_01",
+  "name": "Modern Startup",
+  "type": "basic",
+  "layout": "centered-hero",
+  "styleVibe": "Clean, Modern, Minimalist",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["saas", "tech", "general"],
+  "sections": ["Hero", "Features", "Testimonials", "CTA", "Footer"],
+  "features": ["hero-section", "features-grid", "testimonials"],
+  "previewUrl": "/templates/basic/modern-startup/index.html",
+  "downloadUrl": "/downloads/modern-startup.zip"
+}

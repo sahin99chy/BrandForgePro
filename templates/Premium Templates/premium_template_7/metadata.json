@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_7",
+  "name": "Creative Studio",
+  "category": "Creative",
+  "premium": true,
+  "description": "A creative studio template with portfolio grid and client testimonials.",
+  "tags": [
+    "creative",
+    "agency",
+    "portfolio"
+  ],
+  "features": [
+    "Creative Layout",
+    "Portfolio Grid",
+    "Testimonials"
+  ],
+  "previewImage": "/templates/premium/premium_template_7/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.203Z",
+  "updatedAt": "2025-05-28T01:34:26.203Z"
+}

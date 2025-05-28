@@ -1,0 +1,15 @@
+{
+  "id": "basic_07",
+  "name": "Food Delight",
+  "type": "basic",
+  "layout": "culinary-showcase",
+  "styleVibe": "Appetizing, Warm, Inviting",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["food"],
+  "sections": ["Hero", "Menu", "About", "Gallery", "Reservations", "Footer"],
+  "features": ["menu-preview", "reservation-form", "chef-profiles"],
+  "previewUrl": "/templates/basic/food-delight/index.html",
+  "downloadUrl": "/downloads/food-delight.zip"
+}

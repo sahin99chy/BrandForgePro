@@ -1,0 +1,15 @@
+{
+  "id": "basic_10",
+  "name": "Versatile Venture",
+  "type": "basic",
+  "layout": "multipurpose",
+  "styleVibe": "Adaptable, Professional, Clean",
+  "responsive": true,
+  "graphics": true,
+  "premium": false,
+  "industry": ["general", "tech", "agency"],
+  "sections": ["Hero", "Features", "Pricing", "FAQ", "Contact", "Footer"],
+  "features": ["hero-section", "feature-tabs", "pricing-table", "contact-form"],
+  "previewUrl": "/templates/basic/versatile-venture/index.html",
+  "downloadUrl": "/downloads/versatile-venture.zip"
+}

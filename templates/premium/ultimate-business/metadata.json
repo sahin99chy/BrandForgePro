@@ -1,0 +1,15 @@
+{
+  "id": "premium_20",
+  "name": "Ultimate Business",
+  "type": "premium",
+  "layout": "business-premium",
+  "styleVibe": "Professional, Comprehensive, Polished",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["general", "agency", "tech"],
+  "sections": ["Hero", "Services", "Features", "Case Studies", "Team", "Testimonials", "Pricing", "FAQ", "Contact", "Footer"],
+  "features": ["all-in-one", "customizable-sections", "animation-library"],
+  "previewUrl": "/templates/premium/ultimate-business/index.html",
+  "downloadUrl": "/downloads/ultimate-business.zip"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_11",
+  "name": "Modern Agency",
+  "category": "Agency",
+  "premium": true,
+  "description": "A modern agency template with portfolio showcase and services.",
+  "tags": [
+    "agency",
+    "modern",
+    "creative"
+  ],
+  "features": [
+    "Modern Design",
+    "Agency Layout",
+    "Testimonials"
+  ],
+  "previewImage": "/templates/premium/premium_template_11/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.169Z",
+  "updatedAt": "2025-05-28T01:34:26.169Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "free_template_1",
+  "name": "Startup Launch",
+  "category": "Startup",
+  "premium": false,
+  "description": "A clean and modern landing page template perfect for startups and new businesses.",
+  "tags": [
+    "startup",
+    "modern",
+    "clean"
+  ],
+  "features": [
+    "Responsive Design",
+    "Modern UI",
+    "Fast Loading"
+  ],
+  "previewImage": "/templates/free/free_template_1/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.133Z",
+  "updatedAt": "2025-05-28T01:34:26.134Z"
+}

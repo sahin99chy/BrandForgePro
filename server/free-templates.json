@@ -1,0 +1,292 @@
+[
+  {
+    "id": "free_template_1",
+    "name": "Startup Launch",
+    "type": "free",
+    "premium": false,
+    "category": "Startup",
+    "description": "A clean and modern landing page template perfect for startups and new businesses.",
+    "tags": [
+      "startup",
+      "modern",
+      "clean"
+    ],
+    "features": [
+      "Responsive Design",
+      "Modern UI",
+      "Fast Loading"
+    ],
+    "previewImage": "/templates/free/free_template_1/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_1/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_1&type=free",
+    "createdAt": "2025-05-28T01:34:26.133Z",
+    "updatedAt": "2025-05-28T01:34:26.134Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_10",
+    "name": "Personal Blog",
+    "type": "free",
+    "premium": false,
+    "category": "Blog",
+    "description": "A personal blog template with a clean and minimal design.",
+    "tags": [
+      "blog",
+      "personal",
+      "minimal"
+    ],
+    "features": [
+      "Blog Layout",
+      "Clean Design",
+      "Responsive"
+    ],
+    "previewImage": "/templates/free/free_template_10/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_10/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_10&type=free",
+    "createdAt": "2025-05-28T01:34:26.146Z",
+    "updatedAt": "2025-05-28T01:34:26.146Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_2",
+    "name": "Creative Agency",
+    "type": "free",
+    "premium": false,
+    "category": "Agency",
+    "description": "A creative agency template with a modern design and portfolio showcase.",
+    "tags": [
+      "agency",
+      "creative",
+      "modern"
+    ],
+    "features": [
+      "Creative Layout",
+      "Modern Design",
+      "Easy to Customize"
+    ],
+    "previewImage": "/templates/free/free_template_2/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_2/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_2&type=free",
+    "createdAt": "2025-05-28T01:34:26.148Z",
+    "updatedAt": "2025-05-28T01:34:26.148Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_3",
+    "name": "Portfolio Pro",
+    "type": "free",
+    "premium": false,
+    "category": "Portfolio",
+    "description": "A minimal portfolio template to showcase your work in a clean and elegant way.",
+    "tags": [
+      "portfolio",
+      "minimal",
+      "elegant"
+    ],
+    "features": [
+      "Portfolio Grid",
+      "Clean Layout",
+      "Responsive"
+    ],
+    "previewImage": "/templates/free/free_template_3/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_3/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_3&type=free",
+    "createdAt": "2025-05-28T01:34:26.150Z",
+    "updatedAt": "2025-05-28T01:34:26.150Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_4",
+    "name": "Minimal Blog",
+    "type": "free",
+    "premium": false,
+    "category": "Blog",
+    "description": "A simple and clean blog template for writers and content creators.",
+    "tags": [
+      "blog",
+      "minimal",
+      "clean"
+    ],
+    "features": [
+      "Minimal Design",
+      "Blog Layout",
+      "Clean Typography"
+    ],
+    "previewImage": "/templates/free/free_template_4/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_4/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_4&type=free",
+    "createdAt": "2025-05-28T01:34:26.152Z",
+    "updatedAt": "2025-05-28T01:34:26.152Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_5",
+    "name": "Elegant Resume",
+    "type": "free",
+    "premium": false,
+    "category": "Resume",
+    "description": "A professional resume/CV template with a clean and modern design.",
+    "tags": [
+      "resume",
+      "cv",
+      "professional"
+    ],
+    "features": [
+      "Professional CV",
+      "Clean Design",
+      "Print Ready"
+    ],
+    "previewImage": "/templates/free/free_template_5/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_5/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_5&type=free",
+    "createdAt": "2025-05-28T01:34:26.153Z",
+    "updatedAt": "2025-05-28T01:34:26.153Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_6",
+    "name": "Restaurant Menu",
+    "type": "free",
+    "premium": false,
+    "category": "Restaurant",
+    "description": "A restaurant menu template to showcase your food and drinks.",
+    "tags": [
+      "restaurant",
+      "food",
+      "menu"
+    ],
+    "features": [
+      "Menu Layout",
+      "Food Showcase",
+      "Responsive"
+    ],
+    "previewImage": "/templates/free/free_template_6/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_6/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_6&type=free",
+    "createdAt": "2025-05-28T01:34:26.155Z",
+    "updatedAt": "2025-05-28T01:34:26.155Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_7",
+    "name": "Fitness Coach",
+    "type": "free",
+    "premium": false,
+    "category": "Fitness",
+    "description": "A fitness coach template with class schedules and training programs.",
+    "tags": [
+      "fitness",
+      "health",
+      "coach"
+    ],
+    "features": [
+      "Fitness Focused",
+      "Class Schedule",
+      "Responsive"
+    ],
+    "previewImage": "/templates/free/free_template_7/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_7/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_7&type=free",
+    "createdAt": "2025-05-28T01:34:26.157Z",
+    "updatedAt": "2025-05-28T01:34:26.157Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_8",
+    "name": "Photography",
+    "type": "free",
+    "premium": false,
+    "category": "Photography",
+    "description": "A photography portfolio template to showcase your best shots.",
+    "tags": [
+      "photography",
+      "portfolio",
+      "gallery"
+    ],
+    "features": [
+      "Gallery Layout",
+      "Portfolio Showcase",
+      "Responsive"
+    ],
+    "previewImage": "/templates/free/free_template_8/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_8/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_8&type=free",
+    "createdAt": "2025-05-28T01:34:26.159Z",
+    "updatedAt": "2025-05-28T01:34:26.159Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "free_template_9",
+    "name": "E-commerce Lite",
+    "type": "free",
+    "premium": false,
+    "category": "E-commerce",
+    "description": "A simple e-commerce template for small online stores.",
+    "tags": [
+      "ecommerce",
+      "shop",
+      "store"
+    ],
+    "features": [
+      "Product Grid",
+      "Shopping Cart",
+      "Responsive"
+    ],
+    "previewImage": "/templates/free/free_template_9/thumbnail.jpg",
+    "previewUrl": "/templates/free/free_template_9/index.html",
+    "downloadUrl": "/api/download-template?id=free_template_9&type=free",
+    "createdAt": "2025-05-28T01:34:26.165Z",
+    "updatedAt": "2025-05-28T01:34:26.165Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  }
+]

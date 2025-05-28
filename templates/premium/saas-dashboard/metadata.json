@@ -1,0 +1,15 @@
+{
+  "id": "premium_15",
+  "name": "SaaS Dashboard",
+  "type": "premium",
+  "layout": "dashboard-preview",
+  "styleVibe": "Professional, Data-driven, Clean",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["saas", "tech"],
+  "sections": ["Hero", "Dashboard Preview", "Features", "Integrations", "Testimonials", "Pricing", "FAQ", "Footer"],
+  "features": ["dashboard-mockup", "feature-tour", "pricing-calculator"],
+  "previewUrl": "/templates/premium/saas-dashboard/index.html",
+  "downloadUrl": "/downloads/saas-dashboard.zip"
+}

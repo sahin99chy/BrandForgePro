@@ -1,0 +1,15 @@
+{
+  "id": "premium_19",
+  "name": "Event Launch",
+  "type": "premium",
+  "layout": "event-countdown",
+  "styleVibe": "Exciting, Time-sensitive, Engaging",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["general", "education"],
+  "sections": ["Hero", "Countdown", "Speakers", "Schedule", "Venue", "Registration", "Sponsors", "Footer"],
+  "features": ["countdown-timer", "speaker-profiles", "schedule-overview"],
+  "previewUrl": "/templates/premium/event-launch/index.html",
+  "downloadUrl": "/downloads/event-launch.zip"
+}

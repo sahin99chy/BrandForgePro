@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_10",
+  "name": "Elegant Portfolio",
+  "category": "Portfolio",
+  "premium": true,
+  "description": "An elegant portfolio template with smooth animations and transitions.",
+  "tags": [
+    "portfolio",
+    "elegant",
+    "minimal"
+  ],
+  "features": [
+    "Elegant Design",
+    "Portfolio Showcase",
+    "Responsive"
+  ],
+  "previewImage": "/templates/premium/premium_template_10/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.168Z",
+  "updatedAt": "2025-05-28T01:34:26.168Z"
+}

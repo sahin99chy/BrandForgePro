@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandForgePro - Dynamic Templates</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .template-card {
+            transition: all 0.3s ease;
+        }
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .color-swatch {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .brand-page {
+            display: none;
+        }
+        .brand-page.active {
+            display: block;
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-xl font-bold text-gray-900">BrandForgePro</h1>
+                <span class="ml-2 text-sm bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">Dynamic Templates</span>
+            </div>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-gray-900">Home</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">Templates</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <!-- Input Form -->
+        <div id="input-form" class="bg-white rounded-xl shadow-md p-6 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Your Startup Idea</h2>
+            <div class="mb-6">
+                <label for="idea" class="block text-sm font-medium text-gray-700 mb-1">Describe your startup idea</label>
+                <textarea id="idea" rows="3" class="shadow-sm block w-full border border-gray-300 rounded-md p-3" placeholder="e.g., An AI-powered platform that helps small businesses automate their customer support using natural language processing."></textarea>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Business Category</label>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="relative">
+                        <input type="radio" id="saas" name="category" value="saas" class="sr-only peer" checked>
+                        <label for="saas" class="flex flex-col p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-blue-500 peer-checked:bg-blue-50">
+                            <span class="font-medium text-gray-900">SaaS / Software</span>
+                            <span class="text-sm text-gray-500">For cloud-based software and tools</span>
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input type="radio" id="ecommerce" name="category" value="ecommerce" class="sr-only peer">
+                        <label for="ecommerce" class="flex flex-col p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-blue-500 peer-checked:bg-blue-50">
+                            <span class="font-medium text-gray-900">E-commerce</span>
+                            <span class="text-sm text-gray-500">For online stores and retail</span>
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input type="radio" id="health" name="category" value="health" class="sr-only peer">
+                        <label for="health" class="flex flex-col p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-blue-500 peer-checked:bg-blue-50">
+                            <span class="font-medium text-gray-900">Health / Wellness</span>
+                            <span class="text-sm text-gray-500">For healthcare and wellness</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button id="generate-btn" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                    Generate Brand Page
+                </button>
+            </div>
+        </div>
+
+        <!-- Generated Brand Pages -->
+        <div id="brand-pages-container" class="hidden">
+            <!-- Minimal Tech Template -->
+            <div id="template-minimal-tech" class="brand-page">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h1 class="text-2xl font-bold text-slate-900 mb-1">
+                            Your Generated Brand Page
+                        </h1>
+                        <div class="flex items-center text-sm text-slate-500">
+                            <span>Template: </span>
+                            <span class="font-medium ml-1">Minimal Tech</span>
+                            <span id="version-minimal" class="ml-2 text-xs bg-slate-100 px-2 py-0.5 rounded-full">
+                                Version 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button id="regenerate-btn" class="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+                            More Options
+                        </button>
+                        <button class="inline-flex items-center px-3 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            Export
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 text-white rounded-xl overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 id="brand-name-minimal" class="text-3xl md:text-4xl font-bold mb-2">TechFlow</h2>
+                                <p class="text-slate-400">Streamlining your digital workflow</p>
+                            </div>
+                            <div class="text-4xl">⚙️</div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h3 id="headline-minimal" class="text-2xl md:text-3xl font-bold mb-3">Automate Your Business Processes with AI</h3>
+                            <p id="subheadline-minimal" class="text-lg text-slate-300 mb-6">Our intelligent platform helps small businesses save time and resources by automating repetitive tasks.</p>
+                            
+                            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                                <div class="bg-slate-800 p-6 rounded-lg">
+                                    <div class="text-2xl mb-3">🔧</div>
+                                    <h4 class="text-xl font-semibold mb-2">Seamless Integration</h4>
+                                    <p class="text-slate-300">Connect with your existing tools and workflows in minutes, not days.</p>
+                                </div>
+                                <div class="bg-slate-800 p-6 rounded-lg">
+                                    <div class="text-2xl mb-3">📊</div>
+                                    <h4 class="text-xl font-semibold mb-2">Data-Driven Insights</h4>
+                                    <p class="text-slate-300">Gain valuable insights from your customer interactions and business processes.</p>
+                                </div>
+                                <div class="bg-slate-800 p-6 rounded-lg">
+                                    <div class="text-2xl mb-3">🤖</div>
+                                    <h4 class="text-xl font-semibold mb-2">AI-Powered Automation</h4>
+                                    <p class="text-slate-300">Let our advanced algorithms handle repetitive tasks while you focus on growth.</p>
+                                </div>
+                                <div class="bg-slate-800 p-6 rounded-lg">
+                                    <div class="text-2xl mb-3">🔒</div>
+                                    <h4 class="text-xl font-semibold mb-2">Enterprise-Grade Security</h4>
+                                    <p class="text-slate-300">Your data is protected with state-of-the-art encryption and security protocols.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-10 text-center">
+                                <button class="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors">
+                                    Start Your Free Trial
+                                </button>
+                                <p class="mt-2 text-sm text-slate-400">No credit card required. 14-day free trial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fun & Youthful Template -->
+            <div id="template-fun-youthful" class="brand-page">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h1 class="text-2xl font-bold text-slate-900 mb-1">
+                            Your Generated Brand Page
+                        </h1>
+                        <div class="flex items-center text-sm text-slate-500">
+                            <span>Template: </span>
+                            <span class="font-medium ml-1">Fun & Youthful</span>
+                            <span id="version-fun" class="ml-2 text-xs bg-slate-100 px-2 py-0.5 rounded-full">
+                                Version 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button id="regenerate-btn-fun" class="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+                            More Options
+                        </button>
+                        <button class="inline-flex items-center px-3 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            Export
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-xl overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 id="brand-name-fun" class="text-3xl md:text-4xl font-bold mb-2">BuzzBot</h2>
+                                <p class="text-white opacity-90">Making customer support fun again!</p>
+                            </div>
+                            <div class="text-4xl">🎉</div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h3 id="headline-fun" class="text-2xl md:text-3xl font-bold mb-3">Customer Support That Doesn't Suck!</h3>
+                            <p id="subheadline-fun" class="text-lg text-white opacity-90 mb-6">Say goodbye to boring chatbots and hello to conversations that actually feel human.</p>
+                            
+                            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                                    <div class="text-2xl mb-3">🔥</div>
+                                    <h4 class="text-xl font-semibold mb-2">Super Smart AI</h4>
+                                    <p class="text-white opacity-90">Our AI understands slang, emojis, and even your customers' moods.</p>
+                                </div>
+                                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                                    <div class="text-2xl mb-3">⚡</div>
+                                    <h4 class="text-xl font-semibold mb-2">Lightning Fast</h4>
+                                    <p class="text-white opacity-90">Instant responses that keep your customers happy and coming back for more.</p>
+                                </div>
+                                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                                    <div class="text-2xl mb-3">🎮</div>
+                                    <h4 class="text-xl font-semibold mb-2">Gamified Experience</h4>
+                                    <p class="text-white opacity-90">Turn support tickets into a fun experience with points, badges, and rewards.</p>
+                                </div>
+                                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                                    <div class="text-2xl mb-3">🚀</div>
+                                    <h4 class="text-xl font-semibold mb-2">Easy Setup</h4>
+                                    <p class="text-white opacity-90">Get up and running in 5 minutes with our no-code integration.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-10 text-center">
+                                <button class="px-6 py-3 bg-yellow-400 text-purple-900 font-bold rounded-full hover:bg-yellow-300 transition-colors transform hover:scale-105">
+                                    Try It For Free! 🎯
+                                </button>
+                                <p class="mt-2 text-sm text-white opacity-90">No boring forms. Just awesome support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Corporate Template -->
+            <div id="template-premium" class="brand-page">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h1 class="text-2xl font-bold text-slate-900 mb-1">
+                            Your Generated Brand Page
+                        </h1>
+                        <div class="flex items-center text-sm text-slate-500">
+                            <span>Template: </span>
+                            <span class="font-medium ml-1">Premium Corporate</span>
+                            <span id="version-premium" class="ml-2 text-xs bg-slate-100 px-2 py-0.5 rounded-full">
+                                Version 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button id="regenerate-btn-premium" class="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+                            More Options
+                        </button>
+                        <button class="inline-flex items-center px-3 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            Export
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 text-white rounded-xl overflow-hidden">
+                    <div class="p-8 md:p-12 border-b border-gray-800">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h2 id="brand-name-premium" class="text-3xl md:text-4xl font-bold mb-2">Eloquent<span class="text-yellow-500">AI</span></h2>
+                                <p class="text-gray-400">Enterprise Intelligence Solutions</p>
+                            </div>
+                            <div class="text-yellow-500 text-4xl">💼</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 md:p-12">
+                        <h3 id="headline-premium" class="text-2xl md:text-3xl font-bold mb-3">Transforming Enterprise Communication with Artificial Intelligence</h3>
+                        <p id="subheadline-premium" class="text-lg text-gray-300 mb-10 max-w-3xl">Our sophisticated AI platform elevates your customer interactions through intelligent automation and data-driven insights.</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-8 mt-12">
+                            <div class="border border-gray-800 p-6 rounded-lg">
+                                <div class="text-yellow-500 text-2xl mb-4">📈</div>
+                                <h4 class="text-xl font-semibold mb-3">Strategic Analytics</h4>
+                                <p class="text-gray-400">Comprehensive data analysis providing actionable business intelligence.</p>
+                            </div>
+                            <div class="border border-gray-800 p-6 rounded-lg">
+                                <div class="text-yellow-500 text-2xl mb-4">✅</div>
+                                <h4 class="text-xl font-semibold mb-3">Seamless Integration</h4>
+                                <p class="text-gray-400">Enterprise-grade implementation with your existing infrastructure.</p>
+                            </div>
+                            <div class="border border-gray-800 p-6 rounded-lg">
+                                <div class="text-yellow-500 text-2xl mb-4">🔒</div>
+                                <h4 class="text-xl font-semibold mb-3">Uncompromising Security</h4>
+                                <p class="text-gray-400">SOC 2 compliant with end-to-end encryption and data protection.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-16 flex justify-center">
+                            <button class="px-8 py-4 bg-yellow-500 text-gray-900 font-medium rounded-md hover:bg-yellow-400 transition-colors mr-4">
+                                Request a Consultation
+                            </button>
+                            <button class="px-8 py-4 border border-gray-700 text-white font-medium rounded-md hover:bg-gray-800 transition-colors">
+                                View Case Studies
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="floating-regenerate" class="floating-button hidden px-4 py-3 bg-blue-600 text-white font-medium rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+            ↻ Regenerate
+        </button>
+    </main>
+
+    <footer class="bg-white mt-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                BrandForgePro - Dynamic Multi-Template Brand Page Generation
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Template data
+        const templates = [
+            'template-minimal-tech',
+            'template-fun-youthful',
+            'template-premium'
+        ];
+        
+        // Brand name generators
+        const brandNameGenerators = {
+            'template-minimal-tech': () => {
+                const prefixes = ['Tech', 'Logic', 'Byte', 'Data', 'Code', 'Algo'];
+                const suffixes = ['Flow', 'Sync', 'Ware', 'Pulse', 'Stream', 'Hub'];
+                return prefixes[Math.floor(Math.random() * prefixes.length)] + 
+                       suffixes[Math.floor(Math.random() * suffixes.length)];
+            },
+            'template-fun-youthful': () => {
+                const prefixes = ['Buzz', 'Pop', 'Snap', 'Zap', 'Boom', 'Vibe'];
+                const suffixes = ['Bot', 'Buddy', 'Pal', 'Zilla', 'Hero', 'Ninja'];
+                return prefixes[Math.floor(Math.random() * prefixes.length)] + 
+                       suffixes[Math.floor(Math.random() * suffixes.length)];
+            },
+            'template-premium': () => {
+                const prefixes = ['Eloquent', 'Noble', 'Prestige', 'Vertex', 'Apex', 'Paragon'];
+                const suffixes = ['AI', 'Solutions', 'Group', 'Partners', 'Capital', 'Ventures'];
+                return prefixes[Math.floor(Math.random() * prefixes.length)] + 
+                       '<span class="text-yellow-500">' + suffixes[Math.floor(Math.random() * suffixes.length)] + '</span>';
+            }
+        };
+        
+        // Headline generators
+        const headlineGenerators = {
+            'template-minimal-tech': (idea) => {
+                const options = [
+                    `Automate Your ${getBusinessType()} with AI`,
+                    `Streamline Your ${getBusinessType()} Operations`,
+                    `Transform Your ${getBusinessType()} with Intelligent Automation`,
+                    `Next-Generation ${getBusinessType()} Platform`
+                ];
+                return options[Math.floor(Math.random() * options.length)];
+            },
+            'template-fun-youthful': (idea) => {
+                const options = [
+                    `${getBusinessType()} That Doesn't Suck!`,
+                    `The Coolest ${getBusinessType()} You'll Ever Use!`,
+                    `Say Goodbye to Boring ${getBusinessType()}!`,
+                    `${getBusinessType()} Just Got Awesome!`
+                ];
+                return options[Math.floor(Math.random() * options.length)];
+            },
+            'template-premium': (idea) => {
+                const options = [
+                    `Transforming ${getBusinessType()} with Artificial Intelligence`,
+                    `Elevating Enterprise ${getBusinessType()} to New Heights`,
+                    `The Future of ${getBusinessType()} Excellence`,
+                    `Strategic ${getBusinessType()} Solutions for Industry Leaders`
+                ];
+                return options[Math.floor(Math.random() * options.length)];
+            }
+        };
+        
+        // Subheadline generators
+        const subheadlineGenerators = {
+            'template-minimal-tech': (idea) => {
+                const options = [
+                    `Our intelligent platform helps businesses save time and resources by automating repetitive tasks.`,
+                    `Leverage the power of AI to optimize your workflows and increase productivity.`,
+                    `Data-driven insights and automation tools designed for modern businesses.`,
+                    `Powerful technology that simplifies complex processes and drives efficiency.`
+                ];
+                return options[Math.floor(Math.random() * options.length)];
+            },
+            'template-fun-youthful': (idea) => {
+                const options = [
+                    `Say goodbye to boring tools and hello to something that actually feels fun to use!`,
+                    `We've taken everything you hate about traditional solutions and made it awesome.`,
+                    `It's like your favorite app and your most productive tool had a super cool baby.`,
+                    `Finally, business software that doesn't make you want to take a nap.`
+                ];
+                return options[Math.floor(Math.random() * options.length)];
+            },
+            'template-premium': (idea) => {
+                const options = [
+                    `Our sophisticated platform elevates your business through intelligent automation and data-driven insights.`,
+                    `Empowering enterprise decision-makers with advanced analytics and seamless integration capabilities.`,
+                    `Combining cutting-edge technology with unparalleled expertise to deliver exceptional results.`,
+                    `A comprehensive solution designed to address the complex challenges of today's business landscape.`
+                ];
+                return options[Math.floor(Math.random() * options.length)];
+            }
+        };
+        
+        // Helper function to get business type from idea
+        function getBusinessType() {
+            const businessTypes = [
+                'Business Processes', 'Customer Support', 'Workflow', 'Data Analysis',
+                'Communication', 'Marketing', 'Sales', 'Operations'
+            ];
+            return businessTypes[Math.floor(Math.random() * businessTypes.length)];
+        }
+        
+        // Version counters
+        const versionCounters = {
+            'template-minimal-tech': 1,
+            'template-fun-youthful': 1,
+            'template-premium': 1
+        };
+        
+        // Current template
+        let currentTemplate = '';
+        let previousTemplates = [];
+        
+        // Generate brand page
+        function generateBrandPage() {
+            const idea = document.getElementById('idea').value || 'An AI-powered business automation platform';
+            const category = document.querySelector('input[name="category"]:checked').value;
+            
+            // Hide input form and show brand pages container
+            document.getElementById('input-form').classList.add('hidden');
+            document.getElementById('brand-pages-container').classList.remove('hidden');
+            document.getElementById('floating-regenerate').classList.remove('hidden');
+            
+            // Select a template (avoiding the previous one if regenerating)
+            let availableTemplates = templates.filter(t => !previousTemplates.includes(t));
+            if (availableTemplates.length === 0) {
+                // If all templates have been used, reset and exclude only the most recent
+                availableTemplates = templates.filter(t => t !== currentTemplate);
+            }
+            
+            currentTemplate = availableTemplates[Math.floor(Math.random() * availableTemplates.length)];
+            previousTemplates.push(currentTemplate);
+            if (previousTemplates.length > 2) {
+                previousTemplates.shift(); // Keep only the 2 most recent templates
+            }
+            
+            // Hide all templates
+            templates.forEach(template => {
+                document.getElementById(template).classList.remove('active');
+            });
+            
+            // Show selected template
+            document.getElementById(currentTemplate).classList.add('active');
+            
+            // Update version counter
+            versionCounters[currentTemplate]++;
+            document.getElementById(`version-${currentTemplate.split('-')[1]}`).textContent = `Version ${versionCounters[currentTemplate]}`;
+            
+            // Generate content based on template
+            const templateId = currentTemplate.split('-')[1];
+            
+            // Update brand name
+            const brandNameElement = document.getElementById(`brand-name-${templateId}`);
+            if (brandNameElement) {
+                brandNameElement.innerHTML = brandNameGenerators[currentTemplate]();
+            }
+            
+            // Update headline
+            const headlineElement = document.getElementById(`headline-${templateId}`);
+            if (headlineElement) {
+                headlineElement.textContent = headlineGenerators[currentTemplate](idea);
+            }
+            
+            // Update subheadline
+            const subheadlineElement = document.getElementById(`subheadline-${templateId}`);
+            if (subheadlineElement) {
+                subheadlineElement.textContent = subheadlineGenerators[currentTemplate](idea);
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('generate-btn').addEventListener('click', generateBrandPage);
+        document.getElementById('regenerate-btn').addEventListener('click', generateBrandPage);
+        document.getElementById('regenerate-btn-fun').addEventListener('click', generateBrandPage);
+        document.getElementById('regenerate-btn-premium').addEventListener('click', generateBrandPage);
+        document.getElementById('floating-regenerate').addEventListener('click', generateBrandPage);
+    </script>
+</body>
+</html>

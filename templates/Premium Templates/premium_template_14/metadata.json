@@ -1,0 +1,20 @@
+{
+  "id": "premium_template_14",
+  "name": "Minimal Portfolio",
+  "category": "Portfolio",
+  "premium": true,
+  "description": "A minimal portfolio template with a clean and elegant design.",
+  "tags": [
+    "portfolio",
+    "minimal",
+    "clean"
+  ],
+  "features": [
+    "Minimal Design",
+    "Portfolio Grid",
+    "Responsive"
+  ],
+  "previewImage": "/templates/premium/premium_template_14/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.176Z",
+  "updatedAt": "2025-05-28T01:34:26.176Z"
+}

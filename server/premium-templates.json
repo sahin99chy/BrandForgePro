@@ -1,0 +1,581 @@
+[
+  {
+    "id": "premium_template_1",
+    "name": "Premium Template 1",
+    "type": "premium",
+    "premium": true,
+    "category": "General",
+    "description": "Premium template: premium_template_1",
+    "tags": [
+      "premium"
+    ],
+    "features": [
+      "Responsive Design"
+    ],
+    "previewImage": "/templates/premium/premium_template_1/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_1/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_1&type=premium",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_10",
+    "name": "Elegant Portfolio",
+    "type": "premium",
+    "premium": true,
+    "category": "Portfolio",
+    "description": "An elegant portfolio template with smooth animations and transitions.",
+    "tags": [
+      "portfolio",
+      "elegant",
+      "minimal"
+    ],
+    "features": [
+      "Elegant Design",
+      "Portfolio Showcase",
+      "Responsive"
+    ],
+    "previewImage": "/templates/premium/premium_template_10/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_10/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_10&type=premium",
+    "createdAt": "2025-05-28T01:34:26.168Z",
+    "updatedAt": "2025-05-28T01:34:26.168Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_11",
+    "name": "Modern Agency",
+    "type": "premium",
+    "premium": true,
+    "category": "Agency",
+    "description": "A modern agency template with portfolio showcase and services.",
+    "tags": [
+      "agency",
+      "modern",
+      "creative"
+    ],
+    "features": [
+      "Modern Design",
+      "Agency Layout",
+      "Testimonials"
+    ],
+    "previewImage": "/templates/premium/premium_template_11/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_11/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_11&type=premium",
+    "createdAt": "2025-05-28T01:34:26.169Z",
+    "updatedAt": "2025-05-28T01:34:26.169Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_12",
+    "name": "Startup Kit",
+    "type": "premium",
+    "premium": true,
+    "category": "Startup",
+    "description": "A startup kit template with all the essential sections you need.",
+    "tags": [
+      "startup",
+      "tech",
+      "minimal"
+    ],
+    "features": [
+      "Startup Focused",
+      "Feature Highlights",
+      "Pricing"
+    ],
+    "previewImage": "/templates/premium/premium_template_12/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_12/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_12&type=premium",
+    "createdAt": "2025-05-28T01:34:26.172Z",
+    "updatedAt": "2025-05-28T01:34:26.172Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_13",
+    "name": "Business Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Business",
+    "description": "A professional business template with team and services sections.",
+    "tags": [
+      "business",
+      "corporate",
+      "professional"
+    ],
+    "features": [
+      "Business Focused",
+      "Professional Layout",
+      "Team Section"
+    ],
+    "previewImage": "/templates/premium/premium_template_13/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_13/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_13&type=premium",
+    "createdAt": "2025-05-28T01:34:26.174Z",
+    "updatedAt": "2025-05-28T01:34:26.174Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_14",
+    "name": "Minimal Portfolio",
+    "type": "premium",
+    "premium": true,
+    "category": "Portfolio",
+    "description": "A minimal portfolio template with a clean and elegant design.",
+    "tags": [
+      "portfolio",
+      "minimal",
+      "clean"
+    ],
+    "features": [
+      "Minimal Design",
+      "Portfolio Grid",
+      "Responsive"
+    ],
+    "previewImage": "/templates/premium/premium_template_14/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_14/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_14&type=premium",
+    "createdAt": "2025-05-28T01:34:26.176Z",
+    "updatedAt": "2025-05-28T01:34:26.176Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_15",
+    "name": "Creative Resume",
+    "type": "premium",
+    "premium": true,
+    "category": "Resume",
+    "description": "A professional resume/CV template with a modern and clean layout.",
+    "tags": [
+      "resume",
+      "cv",
+      "professional"
+    ],
+    "features": [
+      "Professional CV",
+      "Elegant Design",
+      "Print Ready"
+    ],
+    "previewImage": "/templates/premium/premium_template_15/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_15/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_15&type=premium",
+    "createdAt": "2025-05-28T01:34:26.180Z",
+    "updatedAt": "2025-05-28T01:34:26.180Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_16",
+    "name": "Restaurant Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Restaurant",
+    "description": "A premium restaurant template with online ordering functionality.",
+    "tags": [
+      "restaurant",
+      "food",
+      "menu",
+      "premium"
+    ],
+    "features": [
+      "Restaurant Menu",
+      "Food Showcase",
+      "Online Ordering"
+    ],
+    "previewImage": "/templates/premium/premium_template_16/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_16/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_16&type=premium",
+    "createdAt": "2025-05-28T01:34:26.182Z",
+    "updatedAt": "2025-05-28T01:34:26.182Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_17",
+    "name": "Fitness Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Fitness",
+    "description": "A fitness template with class schedules and trainer profiles.",
+    "tags": [
+      "fitness",
+      "health",
+      "coach",
+      "premium"
+    ],
+    "features": [
+      "Fitness Focused",
+      "Class Schedule",
+      "Trainer Profiles"
+    ],
+    "previewImage": "/templates/premium/premium_template_17/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_17/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_17&type=premium",
+    "createdAt": "2025-05-28T01:34:26.184Z",
+    "updatedAt": "2025-05-28T01:34:26.184Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_18",
+    "name": "Photography Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Photography",
+    "description": "A premium photography portfolio template with gallery layouts.",
+    "tags": [
+      "photography",
+      "portfolio",
+      "gallery",
+      "premium"
+    ],
+    "features": [
+      "Photography Portfolio",
+      "Gallery Layout",
+      "Responsive"
+    ],
+    "previewImage": "/templates/premium/premium_template_18/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_18/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_18&type=premium",
+    "createdAt": "2025-05-28T01:34:26.185Z",
+    "updatedAt": "2025-05-28T01:34:26.185Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_19",
+    "name": "E-commerce Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "E-commerce",
+    "description": "A complete e-commerce template with product showcase and cart.",
+    "tags": [
+      "ecommerce",
+      "shop",
+      "store",
+      "premium"
+    ],
+    "features": [
+      "E-commerce Shop",
+      "Product Showcase",
+      "Shopping Cart"
+    ],
+    "previewImage": "/templates/premium/premium_template_19/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_19/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_19&type=premium",
+    "createdAt": "2025-05-28T01:34:26.187Z",
+    "updatedAt": "2025-05-28T01:34:26.187Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_2",
+    "name": "SaaS Launch",
+    "type": "premium",
+    "premium": true,
+    "category": "SaaS",
+    "description": "A professional SaaS landing page template with feature highlights.",
+    "tags": [
+      "saas",
+      "tech",
+      "app"
+    ],
+    "features": [
+      "SaaS Focused",
+      "Feature Showcase",
+      "Pricing Tables"
+    ],
+    "previewImage": "/templates/premium/premium_template_2/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_2/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_2&type=premium",
+    "createdAt": "2025-05-28T01:34:26.191Z",
+    "updatedAt": "2025-05-28T01:34:26.191Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_20",
+    "name": "Blog Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Blog",
+    "description": "A professional blog template with clean typography and layout.",
+    "tags": [
+      "blog",
+      "professional",
+      "minimal",
+      "premium"
+    ],
+    "features": [
+      "Professional Blog",
+      "Clean Layout",
+      "SEO Optimized"
+    ],
+    "previewImage": "/templates/premium/premium_template_20/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_20/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_20&type=premium",
+    "createdAt": "2025-05-28T01:34:26.192Z",
+    "updatedAt": "2025-05-28T01:34:26.192Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_3",
+    "name": "Agency Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Agency",
+    "description": "A premium agency template with portfolio showcase and team sections.",
+    "tags": [
+      "agency",
+      "creative",
+      "professional"
+    ],
+    "features": [
+      "Agency Layout",
+      "Portfolio Showcase",
+      "Team Section"
+    ],
+    "previewImage": "/templates/premium/premium_template_3/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_3/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_3&type=premium",
+    "createdAt": "2025-05-28T01:34:26.194Z",
+    "updatedAt": "2025-05-28T01:34:26.194Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_4",
+    "name": "Corporate X",
+    "type": "premium",
+    "premium": true,
+    "category": "Corporate",
+    "description": "A corporate business template with a professional and clean design.",
+    "tags": [
+      "corporate",
+      "business",
+      "professional"
+    ],
+    "features": [
+      "Corporate Design",
+      "Professional Layout",
+      "Testimonials"
+    ],
+    "previewImage": "/templates/premium/premium_template_4/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_4/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_4&type=premium",
+    "createdAt": "2025-05-28T01:34:26.197Z",
+    "updatedAt": "2025-05-28T01:34:26.197Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_5",
+    "name": "Startup Vision",
+    "type": "premium",
+    "premium": true,
+    "category": "Startup",
+    "description": "A modern startup template with feature highlights and testimonials.",
+    "tags": [
+      "startup",
+      "tech",
+      "modern"
+    ],
+    "features": [
+      "Startup Focused",
+      "Feature Highlights",
+      "Call to Action"
+    ],
+    "previewImage": "/templates/premium/premium_template_5/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_5/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_5&type=premium",
+    "createdAt": "2025-05-28T01:34:26.199Z",
+    "updatedAt": "2025-05-28T01:34:26.199Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_6",
+    "name": "App Showcase",
+    "type": "premium",
+    "premium": true,
+    "category": "App",
+    "description": "An app showcase template with feature highlights and screenshots.",
+    "tags": [
+      "app",
+      "mobile",
+      "showcase"
+    ],
+    "features": [
+      "App Showcase",
+      "Feature Highlights",
+      "App Screenshots"
+    ],
+    "previewImage": "/templates/premium/premium_template_6/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_6/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_6&type=premium",
+    "createdAt": "2025-05-28T01:34:26.200Z",
+    "updatedAt": "2025-05-28T01:34:26.200Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_7",
+    "name": "Creative Studio",
+    "type": "premium",
+    "premium": true,
+    "category": "Creative",
+    "description": "A creative studio template with portfolio grid and client testimonials.",
+    "tags": [
+      "creative",
+      "agency",
+      "portfolio"
+    ],
+    "features": [
+      "Creative Layout",
+      "Portfolio Grid",
+      "Testimonials"
+    ],
+    "previewImage": "/templates/premium/premium_template_7/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_7/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_7&type=premium",
+    "createdAt": "2025-05-28T01:34:26.203Z",
+    "updatedAt": "2025-05-28T01:34:26.203Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_8",
+    "name": "Finance Pro",
+    "type": "premium",
+    "premium": true,
+    "category": "Finance",
+    "description": "A finance and business template with data visualization.",
+    "tags": [
+      "finance",
+      "business",
+      "corporate"
+    ],
+    "features": [
+      "Finance Focused",
+      "Data Visualization",
+      "Pricing"
+    ],
+    "previewImage": "/templates/premium/premium_template_8/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_8/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_8&type=premium",
+    "createdAt": "2025-05-28T01:34:26.204Z",
+    "updatedAt": "2025-05-28T01:34:26.204Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  },
+  {
+    "id": "premium_template_9",
+    "name": "Health & Wellness",
+    "type": "premium",
+    "premium": true,
+    "category": "Health",
+    "description": "A health and wellness template with class schedules and trainer profiles.",
+    "tags": [
+      "health",
+      "wellness",
+      "fitness"
+    ],
+    "features": [
+      "Health Focused",
+      "Class Schedule",
+      "Trainer Profiles"
+    ],
+    "previewImage": "/templates/premium/premium_template_9/thumbnail.jpg",
+    "previewUrl": "/templates/premium/premium_template_9/index.html",
+    "downloadUrl": "/api/download-template?id=premium_template_9&type=premium",
+    "createdAt": "2025-05-28T01:34:26.206Z",
+    "updatedAt": "2025-05-28T01:34:26.206Z",
+    "industry": [
+      "General"
+    ],
+    "layout": "standard",
+    "responsive": true,
+    "graphics": false
+  }
+]

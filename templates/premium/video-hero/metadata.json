@@ -1,0 +1,15 @@
+{
+  "id": "premium_06",
+  "name": "Video Hero",
+  "type": "premium",
+  "layout": "video-background",
+  "styleVibe": "Dynamic, Engaging, Immersive",
+  "responsive": true,
+  "graphics": true,
+  "premium": true,
+  "industry": ["tech", "agency", "app"],
+  "sections": ["Video Hero", "Features", "About", "Testimonials", "Pricing", "CTA", "Footer"],
+  "features": ["video-hero", "parallax-scrolling", "animated-stats"],
+  "previewUrl": "/templates/premium/video-hero/index.html",
+  "downloadUrl": "/downloads/video-hero.zip"
+}

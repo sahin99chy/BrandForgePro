@@ -1,0 +1,20 @@
+{
+  "id": "free_template_6",
+  "name": "Restaurant Menu",
+  "category": "Restaurant",
+  "premium": false,
+  "description": "A restaurant menu template to showcase your food and drinks.",
+  "tags": [
+    "restaurant",
+    "food",
+    "menu"
+  ],
+  "features": [
+    "Menu Layout",
+    "Food Showcase",
+    "Responsive"
+  ],
+  "previewImage": "/templates/free/free_template_6/thumbnail.jpg",
+  "createdAt": "2025-05-28T01:34:26.155Z",
+  "updatedAt": "2025-05-28T01:34:26.155Z"
+}
