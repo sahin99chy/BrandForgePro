@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import fs from 'fs';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
   base: '/BrandForgePro/',
   resolve: {
     alias: {
@@ -15,5 +15,36 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
+  server: {
+    port: 3000,
+    strictPort: true,
+  },
+  // Copy the 404.html file to the dist directory
+  // This ensures GitHub Pages can handle client-side routing
+  plugins: [
+    react(),
+    {
+      name: 'copy-files',
+      closeBundle() {
+        // Copy 404.html to dist
+        fs.copyFileSync(
+          path.resolve(__dirname, 'public/404.html'),
+          path.resolve(__dirname, 'dist/404.html')
+        );
+        // Copy CNAME to dist if it exists
+        if (fs.existsSync(path.resolve(__dirname, 'public/CNAME'))) {
+          fs.copyFileSync(
+            path.resolve(__dirname, 'public/CNAME'),
+            path.resolve(__dirname, 'dist/CNAME')
+          );
+        }
+      },
+    },
+  ],
 });
