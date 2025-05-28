@@ -8,7 +8,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { useToast } from "@/components/ui/use-toast";
 import { TemplateMetadata, isTemplateUnlocked, getUserUnlockedTemplates, downloadTemplate, purchaseTemplate } from "@/lib/template-manager";
 import { useState } from "react";
-import { useUser } from "@/lib/auth";
+import { useUser } from "@/lib/auth"; // This import is correct as it's using the @ alias
 
 interface TemplateCardProps {
   template: TemplateMetadata;

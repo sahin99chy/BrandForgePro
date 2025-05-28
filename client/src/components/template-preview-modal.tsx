@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Badge } from "./ui/badge";
 import { TemplateMetadata, isTemplateUnlocked, downloadTemplate, purchaseTemplate } from "@/lib/template-manager";
 import { useToast } from "./ui/use-toast";
-import { useUser } from "@/lib/auth";
+import { useUser } from "@/lib/auth"; // This import is correct as it's using the @ alias
 
 interface TemplatePreviewModalProps {
   isOpen: boolean;
