@@ -3,13 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>BrandForge Pro</title>
-    <script type="module">
-      // Redirect to the main page with the path as a query parameter
-      const path = window.location.pathname + window.location.search + window.location.hash;
-      window.location.href = '/BrandForgePro/index.html' + (path.startsWith('/BrandForgePro') ? path.replace('/BrandForgePro', '') : path);
+    <script>
+      // Single Page Apps for GitHub Pages
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        } else {
+          // Handle direct access to a route
+          var path = window.location.pathname + window.location.search + window.location.hash;
+          if (!path.startsWith('/BrandForgePro/')) {
+            var newPath = '/BrandForgePro/' + path.replace(/^\/?/, '');
+            history.replaceState(null, null, newPath);
+            window.location.reload();
+          }
+        }
+      })();
+    </script>
+    <script>
+      // If still here, redirect to index.html
+      sessionStorage.redirect = location.href;
+      location.replace('/BrandForgePro/');
     </script>
   </head>
   <body>
-    <p>Redirecting...</p>
+    <p>Redirecting to BrandForge Pro...</p>
+    <p>If you are not redirected, <a href="/BrandForgePro/">click here</a>.</p>
   </body>
 </html>
