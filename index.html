@@ -1,61 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>BrandForge - AI-Powered Landing Page Generator</title>
-    <meta name="description" content="Generate complete landing page copy for your startup idea in seconds with AI-powered BrandForge. Transform ideas into compelling copy instantly." />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrandForge - AI-Powered Landing Page Generator</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text: #333;
+      --text-light: #666;
+      --bg-light: #f3f4f6;
+      --white: #fff;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
     
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search) {
-          var q = {};
-          l.search.slice(1).split('&').forEach(function(v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--white);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      text-align: center;
+      padding: 40px 0;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-light);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav li {
+      margin: 0 15px;
+    }
+    
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+    
+    .hero {
+      background-color: var(--bg-light);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 60px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    
+    .feature-card {
+      background-color: var(--white);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      border-top: 1px solid var(--bg-light);
+      margin-top: 60px;
+    }
+    
+    .copyright {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      .hero {
+        padding: 40px 20px;
+      }
+      
+      nav ul {
+        flex-wrap: wrap;
+      }
+      
+      nav li {
+        margin: 5px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BrandForge</h1>
+      <p class="subtitle">AI-Powered Landing Page Generator for Startups</p>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#templates">Templates</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section id="home" class="hero">
+      <h2>Create stunning landing pages in minutes</h2>
+      <p>BrandForge helps startup founders generate professional landing pages with just a few clicks. Describe your startup idea, choose your business type, and let our AI do the rest.</p>
+      <a href="#features" class="btn">Get Started</a>
+    </section>
+    
+    <section id="features">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Free Templates</h3>
+          <p>Access 10 beautifully designed templates completely free.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Premium Templates</h3>
+          <p>Upgrade to access 20 premium templates with animations and advanced features.</p>
+        </div>
+        <div class="feature-card">
+          <h3>AI-Generated Content</h3>
+          <p>Get headlines, features, CTAs, and brand tone tailored to your business.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="templates">
+      <h2>Templates</h2>
+      <p>Choose from our collection of professionally designed templates:</p>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Startup Basic</h3>
+          <p>Perfect for new startups looking for a clean, professional design.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div>
+        <div class="feature-card">
+          <h3>Tech Pro</h3>
+          <p>Designed for tech companies with modern, sleek aesthetics.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div>
+        <div class="feature-card">
+          <h3>Service Plus</h3>
+          <p>Ideal for service-based businesses highlighting their offerings.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Free</h3>
+          <p>Access to 10 basic templates</p>
+          <p>Limited AI content generation</p>
+          <p>BrandForge branding included</p>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="feature-card">
+          <h3>Pro - $29/month</h3>
+          <p>Access to all 30 templates</p>
+          <p>Unlimited AI content generation</p>
+          <p>No BrandForge branding</p>
+          <a href="#" class="btn">Upgrade</a>
+        </div>
+        <div class="feature-card">
+          <h3>Enterprise - Custom</h3>
+          <p>Custom templates</p>
+          <p>Advanced integrations</p>
+          <p>Dedicated support</p>
+          <a href="#" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need help? Reach out to our team.</p>
+      <form>
+        <div style="margin-bottom: 20px;">
+          <label for="name" style="display: block; margin-bottom: 5px;">Name</label>
+          <input type="text" id="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
+          <input type="email" id="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label for="message" style="display: block; margin-bottom: 5px;">Message</label>
+          <textarea id="message" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+        </div>
+        <button type="button" class="btn">Send Message</button>
+      </form>
+    </section>
+    
+    <footer>
+      <p class="copyright">&copy; 2025 BrandForge. All rights reserved.</p>
+      <p><small>Note: This is a static version of the BrandForge application.</small></p>
+    </footer>
+  </div>
+  
+  <script>
+    // Simple JavaScript to handle smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
           });
-          if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (q.p || '') +
-              (q.q ? ('?' + q.q) : '') +
-              l.hash
-            );
-          }
         }
-      }(window.location))
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
+      });
+    });
     
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="BrandForge - AI Landing Page Generator" />
-    <meta property="og:description" content="Transform your startup idea into compelling landing page copy instantly using AI technology." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og-image.jpg" />
+    // Form handling
+    const form = document.querySelector('form');
+    const sendButton = form.querySelector('button');
     
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BrandForge - AI Landing Page Generator" />
-    <meta name="twitter:description" content="Generate complete landing page copy for your startup with AI." />
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/BrandForgePro/assets/main-DasWrMaD.js"></script>
-    <link rel="modulepreload" crossorigin href="/BrandForgePro/assets/vendor-CCLxaqDO.js">
-    <link rel="modulepreload" crossorigin href="/BrandForgePro/assets/vendor-radix-CttiZxwU.js">
-    <link rel="modulepreload" crossorigin href="/BrandForgePro/assets/vendor-react-MBCJHJpT.js">
-    <link rel="modulepreload" crossorigin href="/BrandForgePro/assets/vendor-tanstack-CQnx5P9C.js">
-    <link rel="modulepreload" crossorigin href="/BrandForgePro/assets/vendor-framer-Cx-VJprP.js">
-    <link rel="stylesheet" crossorigin href="/BrandForgePro/assets/main-FJptWamG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+    sendButton.addEventListener('click', function() {
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+      
+      if (nameInput.value && emailInput.value && messageInput.value) {
+        alert('Thank you for your message! We will get back to you soon.');
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+      } else {
+        alert('Please fill out all fields.');
+      }
+    });
+  </script>
+</body>
 </html>
