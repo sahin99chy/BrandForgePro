@@ -93,7 +93,7 @@ export function TemplateGallery({ onPreview, onDownload, onUnlock, onTemplatesFi
         (template.category && template.category.toLowerCase().includes(query)) ||
         (template.layout && template.layout.toLowerCase().includes(query)) ||
         (template.description && template.description.toLowerCase().includes(query)) ||
-        (template.tags && template.tags.some(tag => tag.toLowerCase().includes(query)))
+        (template.tags && template.tags.some((tag: string) => tag.toLowerCase().includes(query)))
       );
     }
     
@@ -101,8 +101,9 @@ export function TemplateGallery({ onPreview, onDownload, onUnlock, onTemplatesFi
     filtered.sort((a, b) => {
       switch (sortBy) {
         case 'newest':
-          const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
-          const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+          // Use current date as fallback if createdAt is not available
+          const dateA = a.createdAt ? new Date(a.createdAt).getTime() : new Date().getTime();
+          const dateB = b.createdAt ? new Date(b.createdAt).getTime() : new Date().getTime();
           return dateB - dateA;
         case 'popular':
           // For now, we'll sort by name as a placeholder for popularity

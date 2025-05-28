@@ -59,6 +59,9 @@ export interface TemplateMetadata {
   previewUrl?: string;
   thumbnailUrl?: string;
   downloadUrl?: string;
+  description?: string;
+  tags?: string[];
+  createdAt?: string;
 }
 
 // Track which templates the user has viewed to avoid consecutive repeats

@@ -19,8 +19,10 @@ import TermsOfService from "@/pages/terms-of-service";
 import Account from "@/pages/account";
 
 function Router() {
+  const base = '/BrandForgePro';
+  
   return (
-    <Switch>
+    <Switch base={base}>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/pricing" component={Pricing} />

@@ -195,7 +195,7 @@ export function PaymentModal({ templateId, onClose, onSuccess }: PaymentModalPro
                 <div>
                   <h3 className="font-medium">{template.name}</h3>
                   <p className="text-sm text-slate-500 dark:text-slate-400">
-                    {template.layout.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Layout
+                    {template.layout?.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Layout
                   </p>
                   <div className="mt-2">
                     <span className="text-lg font-bold">$19.99</span>

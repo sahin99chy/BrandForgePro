@@ -483,7 +483,6 @@ function handleRequest(req, res) {
   // Handle static file serving
   handleStaticFileRequest(req, res);
 }
-}
 
 // Handle template download request
 async function handleTemplateDownload(req, res, query) {

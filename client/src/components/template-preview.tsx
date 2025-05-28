@@ -64,7 +64,7 @@ export function TemplatePreview({ templateId, onClose, onDownload, onUnlock }: T
               )}
             </DialogTitle>
             <DialogDescription>
-              {template.layout.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Layout
+              {template.layout?.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Layout
             </DialogDescription>
           </div>
           
